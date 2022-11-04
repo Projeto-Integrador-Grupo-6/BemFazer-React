@@ -196,18 +196,19 @@ function Navbar() {
             />
           </Search>
 
-          <Link to="login" className="text-decorator-none">
-            <Typography
-              variant="h6"
-              noWrap
-              component="div"
-              sx={{ display: { xs: "none", sm: "block" } }}
-            >
-              Logout
-            </Typography>
-          </Link>
-          
           <Box sx={{ flexGrow: 1 }} />
+          <Box className="sair">
+            <Link to="login" className="text-decorator-none">
+              <Typography
+                variant="h6"
+                noWrap
+                component="div"
+                sx={{ display: { xs: "none", sm: "block" } }}
+              >
+                Logout
+              </Typography>
+            </Link>
+          </Box>
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <IconButton
               size="large"

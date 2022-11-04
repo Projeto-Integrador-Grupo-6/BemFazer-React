@@ -3,10 +3,14 @@
 }
 
 .logo {
-    margin-left: 2em;
+  margin-left: 2em;
 }
 
 .text-decorator-none {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
+}
+
+.sair {
+    margin-right: 2em;
 }
