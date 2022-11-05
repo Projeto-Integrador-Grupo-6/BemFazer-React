@@ -9,7 +9,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-const settings = ['Profile', 'Account', 'Logout'];
+// const settings = ['Profile', 'Account', 'Logout'];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -66,9 +66,11 @@ function Navbar() {
                 <Button type="submit" variant="contained" color="primary">Logar</Button>
               </Box>
             </Link>
-            <Typography variant="h6" color="inherit">
-              cadastrar-se
-            </Typography>
+            <Link to='/cadastrousuario'>
+              <Typography variant="subtitle1" gutterBottom color="inherit">
+                cadastrar-se
+              </Typography>
+            </Link>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
@@ -92,11 +94,25 @@ function Navbar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
+              {/* {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
                   <Typography>{setting}</Typography>
                 </MenuItem>
-              ))}
+              ))} */
+                <MenuItem onClick={handleCloseUserMenu}>
+                  <Box>
+                    <Box>
+                      <Typography>Minha Conta</Typography>
+                    </Box>
+                    <hr />
+                    <Link to='./home'>
+                      <Box>
+                        <Typography>Logout</Typography>
+                      </Box>
+                    </Link>
+                  </Box>
+                </MenuItem>
+              }
             </Menu>
           </Box>
 
