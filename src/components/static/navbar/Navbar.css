@@ -1,0 +1,16 @@
+.navbar {
+    background-color: #292f36 !important;
+  }
+ 
+  .navbar1 {
+    margin-left: 2em;
+  }
+  
+  .text-decorator-none {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .sair {
+      margin-right: 2em;
+  }
