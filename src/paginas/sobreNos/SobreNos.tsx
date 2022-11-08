@@ -6,10 +6,19 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Box, flexbox } from "@mui/system";
-import { Grid } from "@mui/material";
+import { Grid, Icon } from "@mui/material";
 import "./SobreNos.css";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import Avatar from "@mui/material/Avatar";
+import Stack from "@mui/material/Stack";
+import StarIcon from "@mui/icons-material/Star";
+import StarHalfIcon from "@mui/icons-material/StarHalf";
+import { Link } from "react-router-dom";
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap"
+  rel="stylesheet"
+></link>;
 
 export default function SobreNos() {
   const responsive = {
@@ -25,7 +34,7 @@ export default function SobreNos() {
         minHeight: 320,
         position: "relative",
       }}
-      className='space'
+      className="space"
     >
       <CardMedia
         component="img"
@@ -38,8 +47,9 @@ export default function SobreNos() {
           Banco de Alimentos
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-          reprehenderit excepturi ex nostrum, voluptatibus quia aspernatur.
+          A ONG Banco de Alimentos é uma associação civil que recolhe alimentos
+          que já perderam valor de prateleira no comércio e indústria, mas ainda
+          estão aptos para consumo, e os distribui onde são mais necessários.
         </Typography>
       </CardContent>
       <CardActions>
@@ -52,7 +62,7 @@ export default function SobreNos() {
         maxWidth: 245,
         minHeight: 320,
       }}
-      className='space'
+      className="space"
     >
       <CardMedia
         component="img"
@@ -65,8 +75,9 @@ export default function SobreNos() {
           Ampara animal
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-          reprehenderit excepturi ex nostrum, voluptatibus quia aspernatur.
+          A AMPARA é uma OSCIP sem fins lucrativos. Somos protetores de animais
+          abandonados e vítimas de maus-tratos. Lutamos para que os mais de 30
+          milhões de animais de rua tenham uma vida com respeito e amor.
         </Typography>
       </CardContent>
       <CardActions>
@@ -77,9 +88,9 @@ export default function SobreNos() {
     <Card
       sx={{
         maxWidth: 245,
-        minHeight: 320
+        minHeight: 320,
       }}
-      className='space'
+      className="space"
     >
       <CardMedia
         component="img"
@@ -92,8 +103,9 @@ export default function SobreNos() {
           Plan International
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-          reprehenderit excepturi ex nostrum, voluptatibus quia aspernatur.
+          Uma organização humanitária, não governamental e sem fins lucrativos,
+          que promove os direitos das crianças e a igualdade para as meninas.
+          Acreditamos no poder e potencial de todas as crianças.
         </Typography>
       </CardContent>
       <CardActions>
@@ -104,9 +116,9 @@ export default function SobreNos() {
     <Card
       sx={{
         maxWidth: 245,
-        minHeight: 320
+        minHeight: 320,
       }}
-      className='space'
+      className="space"
     >
       <CardMedia
         component="img"
@@ -120,7 +132,9 @@ export default function SobreNos() {
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-          reprehenderit excepturi ex nostrum, voluptatibus quia aspernatur.
+          reprehenderit excepturi ex, voluptatibus quia aspernatur. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Non id provident fugiat
+          quas quia.
         </Typography>
       </CardContent>
       <CardActions>
@@ -131,9 +145,9 @@ export default function SobreNos() {
     <Card
       sx={{
         maxWidth: 245,
-        minHeight: 320
+        minHeight: 320,
       }}
-      className='space'
+      className="space"
     >
       <CardMedia
         component="img"
@@ -143,11 +157,13 @@ export default function SobreNos() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-            Um coração
+          Um coração
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-          reprehenderit excepturi ex nostrum, voluptatibus quia aspernatur.
+          reprehenderit excepturi ex, voluptatibus quia aspernatur. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Non id provident fugiat
+          quas quia.
         </Typography>
       </CardContent>
       <CardActions>
@@ -158,24 +174,30 @@ export default function SobreNos() {
 
   return (
     <div>
-      <Box className='about' justifyContent="center" display="flex">
+      <Box className="about" justifyContent="center">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fugit
-          impedit, amet excepturi facere est nemo molestiae necessitatibus
-          voluptatem. Maxime est voluptatum dolor eaque quod esse voluptas
-          aspernatur eveniet vel! Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. In nobis quibusdam rem ipsum odio. Perspiciatis
-          mollitia explicabo fuga doloremque quis molestias tempore dolore
-          atque, doloribus temporibus eaque, veritatis, quia eveniet? Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Consectetur laborum
-          officiis enim recusandae, quis commodi odit nisi tempora! Eum
-          asperiores eligendi neque sunt reiciendis dolore ut sint, quo nisi
-          impedit.
+          A Bem Fazer é uma plataforma desenvolvida para promover a facilitação
+          da comunicação entre Organizações Não Governamentais e pessoas
+          doadoras.
+        </p>
+        <p>
+          Centralizamos ONGs que trabalham para reforçar o planejamento nacional
+          e regional de desenvolvimento, apoiando relações econômicas, sociais e
+          ambientais positivas entre áreas urbanas, periurbanas e rurais e
+          pessoas que tem disponibilidade de ajudar financeiramente, com
+          materiais ou tempo.
+        </p>
+        <p>
+          Iniciada em 2022 e criado por sete mulheres desenvolvedoras que se
+          dedicaram a ajudar na busca pela resposta da questão “Como será que
+          podemos contribuir para tornar a sua cidade ou comunidade inclusiva,
+          segura, resiliente e sustentável?”
         </p>
       </Box>
 
-      <div className="parceiros">
-        <p> Saiba mais de nossos parceiros:</p>
+      <div className="faixa">
+        <p> PARCEIROS </p>
+        <hr></hr>
       </div>
 
       <div>
@@ -188,6 +210,70 @@ export default function SobreNos() {
             infinite
           />
         </Box>
+      </div>
+      <div className="depoimentos">
+        <div className="faixa">
+          <p>DEPOIMENTOS</p>
+          <hr></hr>
+        </div>
+
+        <Box display="flex" className="avatar">
+          <Stack direction="row" spacing={2}>
+            <Avatar
+              alt="Remy Sharp"
+              src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+              sx={{ width: 100, height: 100 }}
+            />
+          </Stack>
+          <p className="depo">
+            A plataforma foi essencial no crescimento de nossa ONG.Com a Bem
+            Fazer conseguimos chegar a muito mais pessoas que quiser ajudar.{" "}
+            <StarIcon className="star"></StarIcon>
+            <StarIcon className="star"></StarIcon>
+            <StarIcon className="star"></StarIcon>
+            <StarIcon className="star"></StarIcon>
+            <StarHalfIcon className="star"></StarHalfIcon>
+          </p>
+
+          <Stack direction="row" spacing={2}>
+            <Avatar
+              alt="Remy Sharp"
+              src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+              sx={{ width: 100, height: 100 }}
+            />
+          </Stack>
+          <p className="depo">
+            Acredito que com a Bem Fazer os processos tenham se tornado mais
+            simples e centralizados. Era tudo que nossa ONG precisava.
+            <StarIcon className="star"></StarIcon>
+            <StarIcon className="star"></StarIcon>
+            <StarIcon className="star"></StarIcon>
+            <StarIcon className="star"></StarIcon>
+            <StarIcon className="star"></StarIcon>
+          </p>
+          <Stack direction="row" spacing={2}>
+            <Avatar
+              alt="Remy Sharp"
+              src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+              sx={{ width: 100, height: 100 }}
+            />
+          </Stack>
+          <p className="depo">
+            A Bem Fazer me auxiliou muito na conexão com instituições que
+            precisam de ajuda. Com certeza essa plataforma muda vidas!!
+            <StarIcon className="star"></StarIcon>
+            <StarIcon className="star"></StarIcon>
+            <StarIcon className="star"></StarIcon>
+            <StarIcon className="star"></StarIcon>
+            <StarIcon className="star"></StarIcon>
+          </p>
+        </Box>
+      </div>
+
+      <div className="button">
+        <Link to="/cadastrousuario">
+          <button className="button1">Saiba mais ➜</button>
+        </Link>
       </div>
     </div>
   );

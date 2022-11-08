@@ -1,9 +1,10 @@
 .card {
     margin: 0 auto;
-    margin-top: 50px !important;
+    margin-top: 0px !important;
     gap: 30px;
     width: 55%;
-    padding: 15px;
+    padding: 5px;
+    padding-left: 25px;
     position: relative;
     margin-bottom: 15px;
 }
@@ -23,17 +24,53 @@
     border-radius: 8px;
 }
 
-.parceiros {
+.faixa {
     text-align: center !important;
     width: 100%;
     display: block;
-    background-color: #E55C5180;
-    padding: 10px;
+    padding: 5px;
     font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .about {
     padding: 40px;
-    
+    text-align: center;
 }
 
+.avatar {
+    margin-left: 20px;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.depo {
+    padding: 15px;
+    padding-top: 0px;
+}
+
+.depoimentos {
+    margin-bottom: 20px;
+}
+
+.button {
+    text-align: right;
+    margin-right: 50px;
+}
+
+.button1 {
+    background-color: #E55C51;
+    opacity: 0.8;
+    border-radius: 25px;
+    border: 0px;
+    font-size: 15px;
+    color: #fff;
+    padding: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.star {
+    color: #ffb703;
+}
