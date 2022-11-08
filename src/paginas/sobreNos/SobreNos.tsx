@@ -25,6 +25,7 @@ export default function SobreNos() {
         minHeight: 320,
         position: "relative",
       }}
+      className='space'
     >
       <CardMedia
         component="img"
@@ -51,6 +52,7 @@ export default function SobreNos() {
         maxWidth: 245,
         minHeight: 320,
       }}
+      className='space'
     >
       <CardMedia
         component="img"
@@ -77,6 +79,7 @@ export default function SobreNos() {
         maxWidth: 245,
         minHeight: 320
       }}
+      className='space'
     >
       <CardMedia
         component="img"
@@ -103,16 +106,17 @@ export default function SobreNos() {
         maxWidth: 245,
         minHeight: 320
       }}
+      className='space'
     >
       <CardMedia
         component="img"
         height="140"
-        image="https://imgur.com/j3GDnIq.jpg"
-        alt="Plan International"
+        image="https://imgur.com/TNt0anF.jpg"
+        alt="Juntos somos mais"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Plan International
+          Juntos somos mais
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
@@ -129,16 +133,17 @@ export default function SobreNos() {
         maxWidth: 245,
         minHeight: 320
       }}
+      className='space'
     >
       <CardMedia
         component="img"
         height="140"
-        image="https://imgur.com/j3GDnIq.jpg"
-        alt="Plan International"
+        image="https://imgur.com/dRmmToI.jpg"
+        alt="Um coração"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Plan International
+            Um coração
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
@@ -153,7 +158,7 @@ export default function SobreNos() {
 
   return (
     <div>
-      <div style={{ marginTop: 50, margin: 40 }}>
+      <Box className='about' justifyContent="center" display="flex">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fugit
           impedit, amet excepturi facere est nemo molestiae necessitatibus
@@ -167,10 +172,10 @@ export default function SobreNos() {
           asperiores eligendi neque sunt reiciendis dolore ut sint, quo nisi
           impedit.
         </p>
-      </div>
+      </Box>
 
-      <div>
-        <p className="parceiros"> Saiba mais de nossos parceiros:</p>
+      <div className="parceiros">
+        <p> Saiba mais de nossos parceiros:</p>
       </div>
 
       <div>
