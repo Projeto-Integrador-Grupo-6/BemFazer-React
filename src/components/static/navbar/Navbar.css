@@ -1,16 +1,37 @@
 .navbar {
-    background-color: #292f36 !important;
-  }
- 
-  .navbar1 {
-    margin-left: 2em;
-  }
-  
-  .text-decorator-none {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .sair {
-      margin-right: 2em;
-  }
+  background-color: #fff !important;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar2 {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.navbar1 {
+  margin-left: 2em;
+}
+
+.text-decorator-none {
+  text-decoration: none;
+  color: #000;
+}
+
+.sair {
+  margin-right: 2em;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+  position: relative;
+  right: 0;
+  float: right;
+  margin-left: auto;
+}
