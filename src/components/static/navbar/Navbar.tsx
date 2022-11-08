@@ -1,5 +1,5 @@
 import { AppBar, Button, Toolbar, Typography } from "@material-ui/core";
-import { Box } from "@mui/material";
+import { Box, Icon } from "@mui/material";
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
@@ -8,6 +8,7 @@ import Tooltip from '@mui/material/Tooltip';
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 // const settings = ['Profile', 'Account', 'Logout'];
 
@@ -31,7 +32,7 @@ function Navbar() {
   };
   return (
     <>
-      <AppBar className="navbar" position="static">
+      <AppBar className="navbar" position="relative">
         <Toolbar variant="dense">
           <Box>
             <Box className="logo">
@@ -40,36 +41,37 @@ function Navbar() {
             </Box>
           </Box>
 
-          <Box className="navbar1" display="flex" justifyContent="start">
+          <Box className="navbar2">
             <Box mx={1} className="cursor">
-              <Typography variant="h6" color="inherit">
+              <Typography variant="h6" style={{
+                color: '#000'
+              }} color="primary">
                 Home
               </Typography>
             </Box>
             <Box mx={1} className="cursor">
-              <Typography variant="h6" color="inherit">
-                Serviços
+              <Typography variant="h6" style={{
+                color: '#000'
+              }} color="primary">
+                Quem Ajudar
               </Typography>
             </Box>
             <Box mx={1} className="cursor">
-              <Typography variant="h6" color="inherit">
+              <Typography variant="h6" style={{
+                color: '#000'
+              }} color="primary">
                 Sobre Nós
               </Typography>
             </Box>
-            <Box mx={1} className="cursor">
-              <Typography variant="h6" color="inherit">
-                cadastrar categoria
-              </Typography>
-            </Box>
+
+          </Box>
+
+          <Box className="login">
             <Link to="/login" className="text-decorator-none">
-              <Box mx={1} className="cursor">
-                <Button type="submit" variant="contained" color="primary">Logar</Button>
-              </Box>
+              Login
             </Link>
             <Link to='/cadastrousuario'>
-              <Typography variant="subtitle1" gutterBottom color="inherit">
-                cadastrar-se
-              </Typography>
+              <ShoppingCartIcon color="action"></ShoppingCartIcon>
             </Link>
           </Box>
 
