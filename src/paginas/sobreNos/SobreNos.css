@@ -1,0 +1,18 @@
+.card {
+    margin: 0 auto;
+    margin-top: 50px !important;
+    gap: 30px;
+    width: 55%;
+    padding: 15px;
+}
+
+.parceiros {
+    text-align: center !important;
+    width: 100%;
+    display: block;
+    margin-top: 150px;
+}
+
+.MuiPaper-rootMuiPaper-elevationMuiPaper-roundedMuiPaper-elevation1MuiCard-rootcss-1rb2eey-MuiPaper-root-MuiCard-root {
+    height: 80%;
+}
