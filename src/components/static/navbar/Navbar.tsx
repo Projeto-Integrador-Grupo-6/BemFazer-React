@@ -43,11 +43,13 @@ function Navbar() {
 
           <Box className="navbar2">
             <Box mx={1} className="cursor">
-              <Typography variant="h6" style={{
+            <Link to='/home'>
+            <Typography variant="h6" style={{
                 color: '#000'
               }} color="primary">
                 Home
               </Typography>
+            </Link>
             </Box>
             <Box mx={1} className="cursor">
               <Typography variant="h6" style={{
@@ -57,11 +59,13 @@ function Navbar() {
               </Typography>
             </Box>
             <Box mx={1} className="cursor">
-              <Typography variant="h6" style={{
+             <Link to='/sobrenos'>
+             <Typography variant="h6" style={{
                 color: '#000'
               }} color="primary">
                 Sobre Nós
               </Typography>
+             </Link>
             </Box>
 
           </Box>
@@ -71,7 +75,7 @@ function Navbar() {
               Login
             </Link>
             <Link to='/cadastrousuario'>
-              <ShoppingCartIcon color="action"></ShoppingCartIcon>
+             Cadastrar
             </Link>
           </Box>
 
