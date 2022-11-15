@@ -7,6 +7,7 @@ import './App.css';
 import Login from "./paginas/login/Login";
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import SobreNos from './paginas/sobreNos/SobreNos';
+import CadastroCat from './components/categorias/cadastroCat/CadastroCat';
 
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/cadastrousuario" element={<CadastroUsuario />} />
           <Route path="/sobrenos" element={<SobreNos />} />
+
+          <Route path="/formularioCategoria" element={<CadastroCat />} />
+          <Route path="/formularioCategoria/:id" element={<CadastroCat />} />
         </Routes>
       </div>
       <Footer />

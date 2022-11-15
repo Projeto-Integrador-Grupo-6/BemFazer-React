@@ -37,46 +37,37 @@ function Navbar() {
         <Toolbar variant="dense">
           <Box>
             <Box className="logo">
-              <img src="https://i.imgur.com/JMZuidt.png" alt="" width="30px" height="30px" />
-              <img src="https://i.imgur.com/Qey0M0E.png" alt="" width="140px" height="30px" />
+              <Link to='/home' className="text-decorator-none">
+                <img src="https://i.imgur.com/JMZuidt.png" alt="" width="30px" height="30px" />
+                <img src="https://i.imgur.com/Qey0M0E.png" alt="" width="140px" height="30px" />
+              </Link>
             </Box>
           </Box>
 
           <Box className="navbar2">
-            <Box mx={1} className="cursor">
-            <Link to='/home'>
-            <Typography variant="h6" style={{
-                color: '#000'
-              }} color="primary">
-                Home
-              </Typography>
-            </Link>
-            </Box>
-            <Box mx={1} className="cursor">
-              <Typography variant="h6" style={{
-                color: '#000'
-              }} color="primary">
-                Quem Ajudar
-              </Typography>
-            </Box>
-            <Box mx={1} className="cursor">
-             <Link to='/sobrenos'>
-             <Typography variant="h6" style={{
-                color: '#000'
-              }} color="primary">
+            <Typography className="cursor" variant="h6" color="primary">
+              Quem Ajudar
+            </Typography>
+
+            <Link to='/sobrenos' className="text-decorator-none">
+              <Typography className="cursor" variant="h6" color="primary">
                 Sobre Nós
               </Typography>
-             </Link>
-            </Box>
+            </Link>
 
+            <Link to='/formularioCategoria' className="text-decorator-none">
+              <Typography className="cursor" variant="h6" color="primary">
+                Cadastrar Ong
+              </Typography>
+            </Link>
           </Box>
 
           <Box className="login">
             <Link to="/login" className="text-decorator-none">
               Login
             </Link>
-            <Link to='/cadastrousuario'>
-             Cadastrar
+            <Link to='/cadastrousuario' className="text-decorator-none">
+              Cadastrar
             </Link>
           </Box>
 
