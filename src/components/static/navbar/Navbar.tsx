@@ -45,18 +45,24 @@ function Navbar() {
           </Box>
 
           <Box className="navbar2">
-            <Typography className="cursor" variant="h6" color="primary">
+            <Typography className="cursor" variant="h6">
               Quem Ajudar
             </Typography>
 
             <Link to='/sobrenos' className="text-decorator-none">
-              <Typography className="cursor" variant="h6" color="primary">
+              <Typography className="cursor" variant="h6">
                 Sobre Nós
               </Typography>
             </Link>
 
+            <Link to='/categorias' className="text-decorator-none">
+              <Typography className="cursor" variant="h6">
+                Lista Ongs
+              </Typography>
+            </Link>
+
             <Link to='/formularioCategoria' className="text-decorator-none">
-              <Typography className="cursor" variant="h6" color="primary">
+              <Typography className="cursor" variant="h6">
                 Cadastrar Ong
               </Typography>
             </Link>
