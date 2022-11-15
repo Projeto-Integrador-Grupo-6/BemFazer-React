@@ -7,10 +7,11 @@ import './App.css';
 import Login from "./paginas/login/Login";
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import SobreNos from './paginas/sobreNos/SobreNos';
-
 import CadastroCat from './components/categorias/cadastroCat/CadastroCat';
 import ListaCat from './components/categorias/listaCat/ListaCat';
 import DeletarCat from './components/categorias/deletarCat/DeletarCat';
+import ListaServico from './components/servicos/listaServico/ListaServico';
+import CadastroServico from './components/servicos/cadastroServico/CadastroServico';
 
 
 
@@ -31,6 +32,9 @@ function App() {
           <Route path="/formularioCategoria/:id" element={<CadastroCat />} />
           <Route path="/deletarCategoria/:id" element={<DeletarCat />} />
 
+          <Route path="/servicos" element={<ListaServico />} />
+          <Route path="/formularioServico" element={<CadastroServico />} />
+          <Route path="/formularioServico/:id" element={<CadastroServico />} />
         </Routes>
       </div>
       <Footer />

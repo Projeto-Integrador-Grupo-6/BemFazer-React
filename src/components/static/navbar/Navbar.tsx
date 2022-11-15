@@ -66,6 +66,12 @@ function Navbar() {
                 Cadastrar Ong
               </Typography>
             </Link>
+
+            <Link to='/formularioServico' className="text-decorator-none">
+              <Typography className="cursor" variant="h6">
+                Cadastrar Serviço
+              </Typography>
+            </Link>
           </Box>
 
           <Box className="login">
