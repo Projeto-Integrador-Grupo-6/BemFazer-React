@@ -19,6 +19,10 @@ import { Link } from "react-router-dom";
   href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap"
   rel="stylesheet"
 ></link>;
+<link
+  href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap"
+  rel="stylesheet"
+></link>;
 
 export default function SobreNos() {
   const responsive = {
@@ -174,29 +178,42 @@ export default function SobreNos() {
 
   return (
     <div>
-      <Box className="about" justifyContent="center">
-        <p>
-          A Bem Fazer é uma plataforma desenvolvida para promover a facilitação
-          da comunicação entre Organizações Não Governamentais e pessoas
-          doadoras.
-        </p>
-        <p>
-          Centralizamos ONGs que trabalham para reforçar o planejamento nacional
-          e regional de desenvolvimento, apoiando relações econômicas, sociais e
-          ambientais positivas entre áreas urbanas, periurbanas e rurais e
-          pessoas que tem disponibilidade de ajudar financeiramente, com
-          materiais ou tempo.
-        </p>
-        <p>
-          Iniciada em 2022 e criado por sete mulheres desenvolvedoras que se
-          dedicaram a ajudar na busca pela resposta da questão “Como será que
-          podemos contribuir para tornar a sua cidade ou comunidade inclusiva,
-          segura, resiliente e sustentável?”
-        </p>
-      </Box>
+      <div className="about">
+        <img src="https://imgur.com/clvBDgD.jpg" alt="" className="img-bg" />
+
+        <Stack direction="row" spacing={2}>
+          <img
+            src="https://i0.wp.com/www.sabra.org.br/site/wp-content/uploads/2021/06/os-pilares-para-o-desenvolvimento-de-comunidades-sustentaveis-20210423165408.jpg.jpg?fit=800%2C534&ssl=1"
+            alt=""
+            className="img"
+          />
+          <div className="about-bg">
+            <p className="about-text">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Bem Fazer é uma
+              plataforma desenvolvida para promover a facilitação da comunicação
+              entre Organizações Não Governamentais e pessoas doadoras.
+              <br />
+              <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Centralizamos ONGs
+              que trabalham para reforçar o planejamento nacional e regional de
+              desenvolvimento, apoiando relações econômicas, sociais e
+              ambientais positivas entre áreas urbanas, periurbanas e rurais e
+              pessoas que tem disponibilidade de ajudar financeiramente, com
+              materiais ou tempo.
+              <br />
+              <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Iniciada em 2022 e
+              criado por sete mulheres desenvolvedoras que se dedicaram a ajudar
+              na busca pela resposta da questão “Como será que podemos
+              contribuir para tornar a sua cidade ou comunidade inclusiva,
+              segura, resiliente e sustentável?”
+            </p>
+          </div>
+        </Stack>
+      </div>
 
       <div className="faixa">
-        <p> PARCEIROS </p>
+        <p className="faixa-margin"> PARCEIROS </p>
         <hr></hr>
       </div>
 
@@ -213,62 +230,82 @@ export default function SobreNos() {
       </div>
       <div className="depoimentos">
         <div className="faixa">
-          <p>DEPOIMENTOS</p>
+          <p className="faixa-margin">DEPOIMENTOS</p>
           <hr></hr>
         </div>
 
         <Box display="flex" className="avatar">
-          <Stack direction="row" spacing={2}>
-            <Avatar
-              alt="Remy Sharp"
-              src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-              sx={{ width: 100, height: 100 }}
-            />
-          </Stack>
-          <p className="depo">
-            A plataforma foi essencial no crescimento de nossa ONG.Com a Bem
-            Fazer conseguimos chegar a muito mais pessoas que quiser ajudar.{" "}
-            <StarIcon className="star"></StarIcon>
-            <StarIcon className="star"></StarIcon>
-            <StarIcon className="star"></StarIcon>
-            <StarIcon className="star"></StarIcon>
-            <StarHalfIcon className="star"></StarHalfIcon>
-          </p>
+          <div>
+            <Stack direction="row" spacing={2}>
+              <Avatar
+                alt="Remy Sharp"
+                src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+                sx={{ width: 100, height: 100 }}
+              />
+              <p className="depo">
+                A plataforma foi essencial no crescimento de nossa ONG. Com a
+                Bem Fazer conseguimos chegar a muito mais pessoas que quiser
+                ajudar.
+              </p>
+            </Stack>
+            <div className="star">
+              <StarIcon></StarIcon>
+              <StarIcon></StarIcon>
+              <StarIcon></StarIcon>
+              <StarIcon></StarIcon>
+              <StarHalfIcon></StarHalfIcon>
+            </div>
+          </div>
 
-          <Stack direction="row" spacing={2}>
-            <Avatar
-              alt="Remy Sharp"
-              src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-              sx={{ width: 100, height: 100 }}
-            />
-          </Stack>
-          <p className="depo">
-            Acredito que com a Bem Fazer os processos tenham se tornado mais
-            simples e centralizados. Era tudo que nossa ONG precisava.
-            <StarIcon className="star"></StarIcon>
-            <StarIcon className="star"></StarIcon>
-            <StarIcon className="star"></StarIcon>
-            <StarIcon className="star"></StarIcon>
-            <StarIcon className="star"></StarIcon>
-          </p>
-          <Stack direction="row" spacing={2}>
-            <Avatar
-              alt="Remy Sharp"
-              src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-              sx={{ width: 100, height: 100 }}
-            />
-          </Stack>
-          <p className="depo">
-            A Bem Fazer me auxiliou muito na conexão com instituições que
-            precisam de ajuda. Com certeza essa plataforma muda vidas!!
-            <StarIcon className="star"></StarIcon>
-            <StarIcon className="star"></StarIcon>
-            <StarIcon className="star"></StarIcon>
-            <StarIcon className="star"></StarIcon>
-            <StarIcon className="star"></StarIcon>
-          </p>
+          <div>
+            <Stack direction="row" spacing={2}>
+              <Avatar
+                alt="Remy Sharp"
+                src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                sx={{ width: 100, height: 100 }}
+              />
+              <p className="depo">
+                Acredito que com a Bem Fazer os processos tenham se tornado mais
+                centralizados. Era o que nossa ONG precisava.
+              </p>
+            </Stack>
+            <div className="star">
+              <StarIcon></StarIcon>
+              <StarIcon></StarIcon>
+              <StarIcon></StarIcon>
+              <StarIcon></StarIcon>
+              <StarIcon></StarIcon>
+            </div>
+          </div>
+
+          <div>
+            <Stack direction="row" spacing={2}>
+              <Avatar
+                alt="Remy Sharp"
+                src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                sx={{ width: 100, height: 100 }}
+              />
+              <p className="depo">
+                A Bem Fazer me auxiliou muito na conexão com instituições que
+                precisam de ajuda. Com certeza essa plataforma muda vidas!!
+              </p>
+            </Stack>
+            <div className="star">
+              <StarIcon></StarIcon>
+              <StarIcon></StarIcon>
+              <StarIcon></StarIcon>
+              <StarIcon></StarIcon>
+              <StarIcon></StarIcon>
+            </div>
+          </div>
         </Box>
       </div>
+
+      <Box display='flex'>
+        <img className="img-depo" src="https://imgur.com/BJifacN.png" alt="" />
+        <img className="img-depo1" src="https://imgur.com/BJifacN.png" alt="" />
+        <img className="img-depo2" src="https://imgur.com/BJifacN.png" alt="" />
+      </Box>
 
       <div className="button">
         <Link to="/cadastrousuario">
