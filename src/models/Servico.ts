@@ -1,9 +1,12 @@
+import Categoria from "./Categoria";
+
 interface Servico{
 id: number;
 titulo: string;
 descricao: string;
 valor: string;
-categorias?: string | null;
+data: string;
+categoria?: Categoria | null;
 }
 
 export default Servico;
