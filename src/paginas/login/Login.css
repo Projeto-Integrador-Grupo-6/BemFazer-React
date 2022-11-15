@@ -3,10 +3,10 @@
 }
 
 .imagem{
-    background-image: url(https://i.imgur.com/H88yIo2.png);
+    background-image: url(https://i.imgur.com/UARUrry.png);
     background-repeat: no-repeat;
     width: 100vh;
-    min-height: 100vh;
+    min-height: 90vh;
     background-size: cover;
     background-position: center;
 }

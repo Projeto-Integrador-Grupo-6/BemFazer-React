@@ -8,6 +8,11 @@ import Login from "./paginas/login/Login";
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import SobreNos from './paginas/sobreNos/SobreNos';
 
+import CadastroCat from './components/categorias/cadastroCat/CadastroCat';
+import ListaCat from './components/categorias/listaCat/ListaCat';
+import DeletarCat from './components/categorias/deletarCat/DeletarCat';
+
+
 
 function App() {
   return (
@@ -20,6 +25,12 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/cadastrousuario" element={<CadastroUsuario />} />
           <Route path="/sobrenos" element={<SobreNos />} />
+
+          <Route path="/categorias" element={<ListaCat />} />
+          <Route path="/formularioCategoria" element={<CadastroCat />} />
+          <Route path="/formularioCategoria/:id" element={<CadastroCat />} />
+          <Route path="/deletarCategoria/:id" element={<DeletarCat />} />
+
         </Routes>
       </div>
       <Footer />

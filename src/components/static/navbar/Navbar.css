@@ -5,6 +5,10 @@
   justify-content: space-between;
   width: 100%;
 }
+.cursor {
+  cursor: pointer;
+  color: black;
+}
 
 .navbar2 {
   display: flex;
