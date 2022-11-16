@@ -16,6 +16,7 @@ import { Provider } from 'react-redux';
 import store from './store/store';
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import DeletarServico from './components/servicos/deleteServico/DeleteServico';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/formularioCategoria" element={<CadastroCat />} />
           <Route path="/formularioCategoria/:id" element={<CadastroCat />} />
           <Route path="/deletarCategoria/:id" element={<DeletarCat />} />
+          <Route path="/deletarServico/:id"element={<DeletarServico />} />
 
           <Route path="/servicos" element={<ListaServico />} />
           <Route path="/formularioServico" element={<CadastroServico />} />

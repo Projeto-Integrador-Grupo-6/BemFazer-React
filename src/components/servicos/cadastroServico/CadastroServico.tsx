@@ -7,6 +7,7 @@ import Categoria from '../../../models/Categoria';
 import Servico from '../../../models/Servico';
 import { busca, buscaId, post, put } from '../../../services/Service';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import './CadastroServico.css';
 
 function CadastroServico() {
     let history = useNavigate();
@@ -153,8 +154,8 @@ function CadastroServico() {
                             ))
                         }
                     </Select>
-                    <FormHelperText>Escolha um Tipo para a Serviço</FormHelperText>
-                    <Button type="submit" variant="contained" color="primary">
+                    <FormHelperText>Escolha um tipo para o serviço</FormHelperText>
+                    <Button type="submit" variant="contained" className='btn-final'>
                         Finalizar
                     </Button>
                 </FormControl>

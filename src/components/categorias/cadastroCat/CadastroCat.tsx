@@ -128,7 +128,7 @@ function CadastroCat() {
                 <Button
                     type="submit"
                     variant="contained"
-                    color="primary"
+                    className='btn-final'
                 >
                     Finalizar
                 </Button>

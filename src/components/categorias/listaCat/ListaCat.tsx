@@ -47,11 +47,11 @@ function ListaCat() {
     return (
         <>{
             categorias.map(categoria => (
-                <Box m={2} >
+                <Box m={2} className='box-card'>
                     <Card variant="outlined">
                         <CardContent>
                             <Typography color="textSecondary" gutterBottom>
-                                Tipos de Ongs
+                                Tipos de ONGs
                             </Typography>
                             <Typography variant="h5" component="h2">
                                 {categoria.tipo}
@@ -62,14 +62,14 @@ function ListaCat() {
 
                                 <Link to={`/formularioCategoria/${categoria.id}`} className="text-decorator-none">
                                     <Box mx={1}>
-                                        <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                                        <Button variant="contained" className="marginLeft1" size='small' color="primary" >
                                             atualizar
                                         </Button>
                                     </Box>
                                 </Link>
                                 <Link to={`/deletarCategoria/${categoria.id}`} className="text-decorator-none">
                                     <Box mx={1}>
-                                        <Button variant="contained" size='small' color="secondary">
+                                        <Button variant="contained" size='small' color="secondary" className='button-del'>
                                             deletar
                                         </Button>
                                     </Box>

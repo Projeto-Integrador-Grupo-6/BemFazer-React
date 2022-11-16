@@ -27,7 +27,7 @@ function DeletarServico() {
     }, [id])
 
     async function fidnById(id: string) {
-        buscaId(`/servico/${id}`, setServicos, {
+        buscaId(`/servicos/${id}`, setServicos, {
             headers: {
                 Authorization: token,
             },
@@ -35,13 +35,13 @@ function DeletarServico() {
     }
 
     function sim() {
-        history("/servico/all");
+        history("/home");
         deleteId(`/servicos/${id}`, {
             headers: {
                 'Authorization': token
             }
         });
-        alert('Serviço deletada com sucesso');
+        alert('Serviço deletado com sucesso');
     }
 
     function nao() {

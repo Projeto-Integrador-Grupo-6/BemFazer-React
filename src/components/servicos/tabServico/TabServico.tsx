@@ -4,6 +4,7 @@ import { Box } from '@mui/material';
 import React, { useState } from 'react'
 import SobreNos from '../../../paginas/sobreNos/SobreNos';
 import ListaServico from '../listaServico/ListaServico';
+import './TabServico.css';
 
 function TabServico() {
     const [value, setValue] = useState('1')
@@ -13,8 +14,8 @@ function TabServico() {
     return (
         <>
             <TabContext value={value}>
-                <AppBar className='barraCor' position="static">
-                    <Tabs centered indicatorColor="secondary" onChange={handleChange}>
+                <AppBar position="static">
+                    <Tabs centered indicatorColor="secondary" onChange={handleChange} className="barraCor" >
                         <Tab label="Todos os Serviços" value="1" />
                         <Tab label="Sobre nós" value="2" />
                     </Tabs>
