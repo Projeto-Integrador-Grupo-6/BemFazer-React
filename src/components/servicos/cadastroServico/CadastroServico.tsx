@@ -32,13 +32,13 @@ function CadastroServico() {
         descricao: '',
         valor: '',
         data: '',
-        categoria: null
+        categorias: null
     })
 
     useEffect(() => {
         setServico({
             ...servico,
-            categoria: categoria
+            categorias: categoria
         })
     }, [categoria])
 
@@ -69,7 +69,7 @@ function CadastroServico() {
         setServico({
             ...servico,
             [e.target.name]: e.target.value,
-            categoria: categoria
+            categorias: categoria
         })
     }
 
