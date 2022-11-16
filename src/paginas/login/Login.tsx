@@ -2,15 +2,18 @@ import React, { ChangeEvent, useState, useEffect } from 'react';
 import { Button, Grid, TextField, Typography } from "@material-ui/core";
 import { Box } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
-import useLocalStorage from "react-use-localstorage";
 import { login } from "../../services/Service";
 import UserLogin from "../../models/UserLogin";
 import './Login.css';
+import { useDispatch } from 'react-redux';
+import { addToken } from '../../store/tokens/actions';
+import { toast } from 'react-toastify';
 
 function Login() {
 
   let history = useNavigate();
-  const [token, setToken] = useLocalStorage('token');
+  const dispatch = useDispatch();
+  const [token, setToken] = useState('');
 
   const [userLogin, setUserLogin] = useState<UserLogin>(
     {
@@ -32,6 +35,7 @@ function Login() {
 
   useEffect(() => {
     if (token != '') {
+      dispatch(addToken(token));
       history('/home');
     }
   }, [token]);
@@ -41,9 +45,27 @@ function Login() {
     try {
       await login(`/usuarios/logar`, userLogin, setToken)
 
-      alert('Usuário logado com sucesso!');
+      toast.success("Usuário logado com sucesso!", {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        theme: "colored",
+        progress: undefined,
+    });
     } catch (error) {
-      alert('Usuário não encontrado. Tente novamente!');
+      toast.error("Usuário não encontrado. Tente novamente!", {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        theme: "colored",
+        progress: undefined,
+    });
     }
   }
 
