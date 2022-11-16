@@ -34,7 +34,7 @@ function ListaServico() {
     }, [token])
 
     async function getServico() {
-        await busca("/servicos", setServicos, {
+        await busca("/servicos/all", setServicos, {
             headers: {
                 'Authorization': token
             }
@@ -65,7 +65,7 @@ function ListaServico() {
                                 {servico.valor}
                             </Typography>
                             <Typography variant="body2" component="p">
-                                {servico.categoria?.tipo}
+                                {servico.categorias?.tipo}
                             </Typography>
                         </CardContent>
                         <CardActions>

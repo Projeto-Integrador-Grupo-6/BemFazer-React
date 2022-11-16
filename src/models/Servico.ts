@@ -6,7 +6,7 @@ titulo: string;
 descricao: string;
 valor: string;
 data: string;
-categoria?: Categoria | null;
+categorias?: Categoria | null;
 }
 
 export default Servico;
