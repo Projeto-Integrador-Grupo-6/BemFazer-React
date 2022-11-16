@@ -1,34 +1,33 @@
-import { Button, Container, FormControl, FormHelperText, InputLabel, MenuItem, Select, TextField, Typography } from '@material-ui/core';
-import React, { ChangeEvent, useEffect, useState } from 'react'
+import { Button, Card, CardActions, CardContent, Typography } from '@material-ui/core';
+import { Box } from '@mui/material';
+import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
-import Categoria from '../../../models/Categoria';
 import Servico from '../../../models/Servico';
-import { busca, buscaId, post, put } from '../../../services/Service';
+import { buscaId, deleteId } from '../../../services/Service';
 
-function DeletarServico(){
-    let navigate = useNavigate();
+function DeletarServico() {
+    let history = useNavigate();
     const { id } = useParams<{ id: string }>();
-    const token = useSelector<TokenState, TokenState["tokens"]>(
-        (state) => state.tokens
-    )
-    const [servico, setServico] = useState<Servico>()
+    const [servicos, setServicos] = useState<Servico>()
+    const [token, setToken] = useLocalStorage('token');
 
-    useEffect( () => {
-        if (token === ""){
+
+    useEffect(() => {
+        if (token === "") {
             alert("Você precisa estar logado !")
             history("/login")
         }
-    },[token]);
+    }, [token]);
 
     useEffect(() => {
         if (id !== undefined) {
-            findByIdServico(id);
+            fidnById(id)
         }
-    }, [id]);
+    }, [id])
 
     async function fidnById(id: string) {
-        buscaId(`/servico/${id}`, setServico, {
+        buscaId(`/servico/${id}`, setServicos, {
             headers: {
                 Authorization: token,
             },
@@ -36,21 +35,17 @@ function DeletarServico(){
     }
 
     function sim() {
-        navigate("/servico/all");
+        history("/servico/all");
         deleteId(`/servicos/${id}`, {
             headers: {
-                Authorization: token,
-            },
+                'Authorization': token
+            }
         });
-        alert("Servico deletado com sucesso!");
-
-    } catch (error) {
-        alert('Falha ao apagar o servico');
-      }
+        alert('Serviço deletada com sucesso');
     }
-  
+
     function nao() {
-      history('/servico');
+        history('/servicos/all');
     }
 
     return (
@@ -63,7 +58,7 @@ function DeletarServico(){
                                 Deseja deletar o Servico?
                             </Typography>
                             <Typography color="textSecondary">
-                                {post?.titulo}
+                                {servicos?.titulo}
                             </Typography>
                         </Box>
                     </CardContent>
