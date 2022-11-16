@@ -45,19 +45,10 @@ function Navbar() {
           </Box>
 
           <Box className="navbar2">
-            <Typography className="cursor" variant="h6">
-              Quem Ajudar
-            </Typography>
-
-            <Link to='/sobrenos' className="text-decorator-none">
-              <Typography className="cursor" variant="h6">
-                Sobre Nós
-              </Typography>
-            </Link>
 
             <Link to='/categorias' className="text-decorator-none">
               <Typography className="cursor" variant="h6">
-                Lista Ongs
+                ONGs
               </Typography>
             </Link>
 
@@ -83,10 +74,10 @@ function Navbar() {
             </Link>
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
+          <Box sx={{ flexGrow: 0 }} className="login">
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Remy Sharp" src="https://github.com/Projeto-Integrador-Grupo-6.jpg" />
               </IconButton>
             </Tooltip>
             <Menu sx={{ mt: '45px' }}

@@ -179,8 +179,6 @@ export default function SobreNos() {
   return (
     <div>
       <div className="about">
-        <img src="https://imgur.com/clvBDgD.jpg" alt="" className="img-bg" />
-
         <Stack direction="row" spacing={2}>
           <img
             src="https://i0.wp.com/www.sabra.org.br/site/wp-content/uploads/2021/06/os-pilares-para-o-desenvolvimento-de-comunidades-sustentaveis-20210423165408.jpg.jpg?fit=800%2C534&ssl=1"
