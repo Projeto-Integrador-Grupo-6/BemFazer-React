@@ -36,3 +36,16 @@
   margin-left: auto;
   gap: 15px;
 }
+
+.login2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  position: relative;
+  right: 10;
+  float: right;
+  margin-left: auto;
+  gap: 30px;
+  font-size: 20px;
+}
