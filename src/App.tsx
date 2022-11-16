@@ -12,11 +12,16 @@ import ListaCat from './components/categorias/listaCat/ListaCat';
 import DeletarCat from './components/categorias/deletarCat/DeletarCat';
 import ListaServico from './components/servicos/listaServico/ListaServico';
 import CadastroServico from './components/servicos/cadastroServico/CadastroServico';
-
+import { Provider } from 'react-redux';
+import store from './store/store';
+import { ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 
 function App() {
   return (
+    <Provider store={store}>
+      <ToastContainer />
     <Router>
       <Navbar />
       <div style={{ minHeight: "100vh" }}>
@@ -39,6 +44,7 @@ function App() {
       </div>
       <Footer />
     </Router>
+    </Provider>
   );
 }
 
