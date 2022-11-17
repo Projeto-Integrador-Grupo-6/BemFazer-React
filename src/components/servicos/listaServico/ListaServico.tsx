@@ -20,6 +20,11 @@ function ListaServico() {
   const token = useSelector<TokenState, TokenState["tokens"]>(
     (state) => state.tokens
   );
+
+  const tipoUser = useSelector<TokenState, TokenState["tipoUser"]>(
+    (state) => state.tipoUser
+  )
+
   let history = useNavigate();
 
   useEffect(() => {
@@ -52,56 +57,81 @@ function ListaServico() {
 
   return (
     <>
-    <div className="box-servico">
-      {servicos.map((servico) => (
-        <Box m={2}>
-          <Card variant="outlined" className="card-ong">
-            <CardContent>
-              <Typography variant="h5" component="h2">
-                {servico.titulo}
-              </Typography>
-              <Typography variant="body2" component="p">
-                {servico.descricao}
-              </Typography>
-              <Typography variant="body2" component="p">
-                {servico.valor}
-              </Typography>
-              <Typography variant="body2" component="p">
-                {servico.categorias?.tipo}
-              </Typography>
-            </CardContent>
-            <CardActions>
+      <div className="box-servico">
+        {servicos.map((servico) => (
+          <Box m={2}>
+            <Card variant="outlined" className="card-ong">
+              <CardContent>
+                <Typography variant="h5" component="h2">
+                  {servico.titulo}
+                </Typography>
+                <Typography variant="body2" component="p">
+                  {servico.descricao}
+                </Typography>
+                <Typography variant="body2" component="p">
+                  {servico.valor}
+                </Typography>
+                <Typography variant="body2" component="p">
+                  {servico.categorias?.tipo}
+                </Typography>
+              </CardContent>
+             
+            {tipoUser === 'ong' ? (
+               <CardActions>
+               <Box display="flex" justifyContent="center" mb={1.5}>
+                 <Link
+                   to={`/deletarServico/${servico.id}`}
+                   className="text-decorator-none"
+                 >
+                   <Box mx={1}>
+                     <Button
+                       variant="contained"
+                       size="small"
+                       color="secondary"
+                       className="btn-del"
+                     >
+                       deletar
+                     </Button>
+                   </Box>
+                 </Link>
+
+                 <Link
+                   to={`/formularioServico/${servico.id}`}
+                   className="text-decorator-none"
+                 >
+                   <Box mx={1}>
+                     <Button
+                       variant="contained"
+                       size="small"
+                       color="primary"
+                       className="btn-att"
+                     >
+                       atualizar
+                     </Button>
+                   </Box>
+                 </Link>
+               </Box>
+             </CardActions>
+            ) : (
+              <CardActions>
               <Box display="flex" justifyContent="center" mb={1.5}>
-                <Link
-                  to={`/formularioServico/${servico.id}`}
-                  className="text-decorator-none"
-                >
                   <Box mx={1}>
                     <Button
                       variant="contained"
                       size="small"
-                      color="primary"
-                      className="btn-att"
+                      color="secondary"
+                      className="btn-doar"
                     >
-                      atualizar
+                      DOAR
                     </Button>
                   </Box>
-                </Link>
-                <Link
-                  to={`/deletarServico/${servico.id}`}
-                  className="text-decorator-none"
-                >
-                  <Box mx={1}>
-                    <Button variant="contained" size="small" color="secondary" className="btn-del">
-                      deletar
-                    </Button>
-                  </Box>
-                </Link>
               </Box>
             </CardActions>
-          </Card>
-        </Box>
-      ))}
+            )}
+
+            </Card>
+          </Box>
+        ))}
       </div>
     </>
   );

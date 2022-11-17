@@ -26,9 +26,6 @@ function TabServico() {
                     </Box>
                 </TabPanel>
                 <TabPanel value="2">
-                    <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo">
-                        Sobre nós
-                    </Typography>
                     <Typography variant="body1" gutterBottom color="textPrimary" align="justify">
                         <SobreNos />
                     </Typography>

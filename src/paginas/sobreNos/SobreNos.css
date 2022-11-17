@@ -4,9 +4,22 @@
     gap: 30px;
     width: 80%;
     padding: 5px;
-    padding-left: 25px;
+    padding-left: 55px;
     position: relative;
     margin-bottom: 15px;
+}
+
+.card button {
+    color: #E55C51 !important;
+    transform: translateX(150%);
+    font-weight: 500;
+    border-bottom: 1px solid #E55C51;
+}
+
+.card button:hover {
+    background-color: #E55C51 !important;
+    color: #fff !important;
+    transform: translateX(150%);
 }
 
 .space {
@@ -31,7 +44,7 @@
     margin: 0 !important;
     height: 80%;
     width: 220em;
-    transform: translateY(22%);
+    transform: translateY(8%);
     border-radius: 0 10px 10px 0;
     padding-right: 20px;
 }
@@ -80,9 +93,8 @@
 }
 
 .avatar {
-    margin-left: 20px;
-    margin-top: 5px;
-    gap: 5px;
+    margin-left: 150px;
+    margin-bottom: 0;
 }
 
 .depo {
@@ -122,19 +134,6 @@
     transform: translateY(-200%);
 }
 
-.button1 {
-    background-color: #E55C51;
-    opacity: 0.8;
-    border-radius: 25px;
-    border: 0px;
-    font-size: 15px;
-    color: #fff;
-    padding: 15px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-
 .button1:hover {
     opacity: 1;
 }
@@ -145,4 +144,152 @@
     transform: translateX(-2%);
 }
 
+.button-sn {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica,"sans-serif";
+    transition: all .2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #E55C51;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    transform: translateX(720%);
+  }
+  
+  button:hover {
+    background: #E55C51;
+    opacity: 0.6;
+  }
+  
+  button > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+  }
+  
+  button:hover svg {
+    transform: translateX(5px);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  .text-decorator-none1 {
+    text-decoration: none !important;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
 
+  * {
+    box-sizing: border-box;
+  }
+  
+  .page-contain {
+    display: flex;
+    max-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    background: #e55b5153;
+    border: .75em solid #fff;
+    padding: 2em;
+    font-family: 'Open Sans', sans-serif;
+    gap: 50px;
+  }
+  
+  .data-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 20.75em;
+    min-height: 22.75em;
+    overflow: hidden;
+    border-radius: .5em;
+    text-decoration: none;
+    background: white;
+    margin: 1em;
+    padding: 2.75em 2.5em;
+    box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+    transition: transform .45s ease, background .45s ease;
+  }
+
+  h4 {
+    color: #E55C51;
+    text-transform: uppercase;
+    font-size: 1.125em;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    margin: 0 0 1.777777778em;
+    transition: color .45s ease;
+    border-bottom: 2px solid #E55C51;
+    padding-bottom: .5em;
+  }
+
+.p-depo {
+    opacity: 0.5;
+    color: #E55C51;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0 0 1.25em;
+    transform: translateY(-1em);
+    transition: opacity .45s ease, transform .5s ease;
+  }
+
+.link-text {
+    display: block;
+    color: #E55C51;
+    font-size: 1.125em;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: auto 0 0;
+    transition: color .45s ease;
+  }
+
+.link-text svg {
+    margin-left: .5em;
+    transition: transform .6s ease;
+}
+
+.link-text path {
+    transition: fill .45s ease;
+}
+
+.data-card:hover {
+    background: #E55C51;
+    transform: scale(1.02)
+}
+
+.data-card:hover h4 {
+    color: #FFFFFF;
+    border-bottom: 2px solid #fff;
+}
+    
+.data-card:hover .p-depo {
+    color: #FFFFFF;
+    opacity: 1;
+    transform: none;
+}
+
+.data-card:hover link-text {
+    color: #FFFFFF;
+}
+
+.data-card:hover .link-text svg {
+    animation: point 1.25s infinite alternate;
+}
+
+.data-card:hover .link-text path {
+    fill: #FFFFFF;
+}
+
+@keyframes point {
+  0% {
+   transform: translateX(0);
+  }
+  100% {
+    transform: translateX(.125em);
+  }
+}

@@ -1,5 +1,6 @@
 .textos1{
     font-weight: bold !important;
+    color: #E55C51;
 }
 
 .imagem{
@@ -13,4 +14,14 @@
 
 .text-decorator-none{
     text-decoration: none;
+}
+
+.btn-logar {
+    background-color: #E55C51 !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.btn-logar:hover {
+    background-color: #E55C51;
 }

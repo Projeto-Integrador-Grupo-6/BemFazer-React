@@ -1,8 +1,8 @@
 .imagem2 {
-    background-image: url(https://imgur.com/0hPrwpu.png);
+    background-image: url(https://imgur.com/Y6gGbbV.png);
     background-repeat: no-repet;
-    width: 100vh;
-    min-height: 100vh;
+    width: 60vh;
+    min-height: 70vh;
     background-size: cover;
     background-position: center;
 }
@@ -13,4 +13,24 @@
 
 .btnCancelar {
     margin-right: 20px !important;
+}
+
+.btn-ent {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #E55C51;
+    font-weight: bold !important;
+    font-size: 18px;
+}
+
+.btn-tipo {
+    margin-top: 20px;
+}
+
+.btn-cadastrar {
+    background-color: #E55C51 !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    margin-bottom: 10px !important;
 }
