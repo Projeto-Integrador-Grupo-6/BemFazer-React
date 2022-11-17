@@ -1,0 +1,26 @@
+.text-decorator-none {
+    text-decoration: none;
+}
+
+.box-servico {
+    display: flex;
+    max-width: 100vw;
+    max-height: 100vh !important;
+    margin-bottom: 15px;
+}
+
+.card-ong {
+    max-width: 250px;
+    min-height: 200px;
+    max-height: 500px;
+}
+
+.btn-att {
+    position: fixed;
+    background-color: #E55C51 !important;
+}
+
+.btn-del {
+    position: fixed;
+    background-color: #E55C5185 !important;
+}
