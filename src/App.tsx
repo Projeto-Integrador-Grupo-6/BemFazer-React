@@ -17,6 +17,7 @@ import store from './store/store';
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import DeletarServico from './components/servicos/deleteServico/DeleteServico';
+import Time from './paginas/time/Time';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/cadastrousuario" element={<CadastroUsuario />} />
           <Route path="/sobrenos" element={<SobreNos />} />
+          <Route path="/time" element={<Time />} />
 
           <Route path="/categorias" element={<ListaCat />} />
           <Route path="/formularioCategoria" element={<CadastroCat />} />
