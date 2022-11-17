@@ -1,11 +1,11 @@
-import React, { useState, useEffect, ChangeEvent } from 'react';
-import { Grid, Typography, TextField, Button } from "@material-ui/core";
+import React, { useState, useEffect, ChangeEvent } from "react";
+import { Grid, Typography, TextField, Button, Select } from "@material-ui/core";
 import { Link, useNavigate } from "react-router-dom";
-import { Box } from "@mui/material";
+import { Box, FormControl, MenuItem } from "@mui/material";
 import { cadastroUsuario } from "../../services/Service";
-import User from '../../models/User';
-import './CadastroUsuario.css';
-import { toast } from 'react-toastify';
+import User from "../../models/User";
+import "./CadastroUsuario.css";
+import { toast } from "react-toastify";
 
 function CadastroUsuario() {
   let history = useNavigate();
@@ -13,35 +13,35 @@ function CadastroUsuario() {
   const [confirmarSenha, setConfirmarSenha] = useState<String>("");
   const [user, setUser] = useState<User>({
     id: 0,
-    nome: '',
-    email: '',
-    senha: '',
-    foto: '',
-    tipoUser: ''
-  })
+    nome: "",
+    email: "",
+    senha: "",
+    foto: "",
+    tipoUser: "",
+  });
 
   const [userResult, setUserResult] = useState<User>({
     id: 0,
-    nome: '',
-    email: '',
-    senha: '',
-    foto: '',
-    tipoUser: ''
-  })
+    nome: "",
+    email: "",
+    senha: "",
+    foto: "",
+    tipoUser: "",
+  });
 
   function confirmarSenhaHandle(event: ChangeEvent<HTMLInputElement>) {
-    setConfirmarSenha(event.target.value)
+    setConfirmarSenha(event.target.value);
   }
 
   function updateModel(event: ChangeEvent<HTMLInputElement>) {
     setUser({
       ...user,
-      [event.target.name]: event.target.value
-    })
+      [event.target.name]: event.target.value,
+    });
   }
 
   async function onSubmit(event: ChangeEvent<HTMLFormElement>) {
-    event.preventDefault()
+    event.preventDefault();
 
     if (confirmarSenha == user.senha) {
       try {
@@ -55,7 +55,7 @@ function CadastroUsuario() {
           draggable: false,
           theme: "colored",
           progress: undefined,
-      });
+        });
       } catch (error) {
         toast.error("Falha interna ao cadastrar!", {
           position: "top-right",
@@ -66,29 +66,39 @@ function CadastroUsuario() {
           draggable: false,
           theme: "colored",
           progress: undefined,
-      });
+        });
       }
     } else {
-      toast.error("Dados inconsistentes. Favor verificar as informações de cadastro!", {
-        position: "top-right",
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: false,
-        draggable: false,
-        theme: "colored",
-        progress: undefined,
-    });
+      toast.error(
+        "Dados inconsistentes. Favor verificar as informações de cadastro!",
+        {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: false,
+          theme: "colored",
+          progress: undefined,
+        }
+      );
 
-      setUser({ ...user, senha: '' });
-      setConfirmarSenha('');
+      setUser({ ...user, senha: "" });
+      setConfirmarSenha("");
     }
   }
   useEffect(() => {
     if (userResult.id !== 0) {
-      history('/login');
+      history("/login");
     }
   }, [userResult]);
+
+  function selectTipo(event: ChangeEvent<any>) {
+    setUser({
+      ...user,
+      tipoUser: event.target.value,
+    });
+  }
 
   return (
     <Grid container direction="row" justifyContent="center" alignItems="center">
@@ -97,33 +107,114 @@ function CadastroUsuario() {
       <Grid item xs={6} alignItems="center">
         <Box paddingX={10}>
           <form onSubmit={onSubmit}>
-            <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className="textos2" >Cadastrar</Typography>
+            <Typography
+              variant="h3"
+              gutterBottom
+              color="textPrimary"
+              component="h3"
+              align="center"
+              className="textos2"
+            >
+              Cadastrar
+            </Typography>
 
-            <TextField value={user.nome} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} id="nome" label="Nome" variant="outlined" name="nome" margin="normal" fullWidth />
-            <TextField value={user.email} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} id="email" label="Email" variant="outlined" name="email" margin="normal" fullWidth />
-            <TextField value={user.foto} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} id="foto" label="Url da foto" variant="outlined" name="foto" margin="normal" fullWidth />
-            <TextField value={user.senha} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} id="senha" label="Senha" variant="outlined" name="senha" margin="normal" type="password" fullWidth />
-            <TextField value={confirmarSenha} onChange={(event: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(event)} id="confirmarSenha" label="Confirmar Senha" variant="outlined" name="confirmarSenha" margin="normal" type="password" fullWidth />
+            <TextField
+              value={user.nome}
+              onChange={(event: ChangeEvent<HTMLInputElement>) =>
+                updateModel(event)
+              }
+              id="nome"
+              label="Nome"
+              variant="outlined"
+              name="nome"
+              margin="normal"
+              fullWidth
+            />
+            <TextField
+              value={user.email}
+              onChange={(event: ChangeEvent<HTMLInputElement>) =>
+                updateModel(event)
+              }
+              id="email"
+              label="Email"
+              variant="outlined"
+              name="email"
+              margin="normal"
+              fullWidth
+            />
+            <TextField
+              value={user.foto}
+              onChange={(event: ChangeEvent<HTMLInputElement>) =>
+                updateModel(event)
+              }
+              id="foto"
+              label="Url da foto"
+              variant="outlined"
+              name="foto"
+              margin="normal"
+              fullWidth
+            />
+            <TextField
+              value={user.senha}
+              onChange={(event: ChangeEvent<HTMLInputElement>) =>
+                updateModel(event)
+              }
+              id="senha"
+              label="Senha"
+              variant="outlined"
+              name="senha"
+              margin="normal"
+              type="password"
+              fullWidth
+            />
+            <TextField
+              value={confirmarSenha}
+              onChange={(event: ChangeEvent<HTMLInputElement>) =>
+                confirmarSenhaHandle(event)
+              }
+              id="confirmarSenha"
+              label="Confirmar Senha"
+              variant="outlined"
+              name="confirmarSenha"
+              margin="normal"
+              type="password"
+              fullWidth
+            />
 
-            <TextField value={user.tipoUser} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} id="tipoUser" label="Tipo Usuário" variant="outlined" name="tipoUser" margin="normal" fullWidth />
+            {/*<TextField value={user.tipoUser} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} id="tipoUser" label="Tipo Usuário" variant="outlined" name="tipoUser" margin="normal" fullWidth />*/}
+
+            <FormControl fullWidth className="btn-tipo">
+              <Select
+                labelId="demo-simple-select-helper-label"
+                id="demo-simple-select-helper"
+                value={user.tipoUser}
+                onChange={selectTipo}
+              >
+                <MenuItem value=""> Escolha o tipo de usuário: </MenuItem>
+                <MenuItem value="ong">ONG</MenuItem>
+                <MenuItem value="voluntario">Voluntário</MenuItem>
+              </Select>
+            </FormControl>
 
             <Box marginTop={2} textAlign="center">
-              <Link to="/login" className="text-decorator-none">
-                <Button className="btnCancelar" variant="contained" color="secondary">
-                  Cancelar
-                </Button>
-              </Link>
-
-              <Button type="submit" variant="contained" color="primary">
+              <Button type="submit" variant="contained" className="btn-cadastrar">
                 cadastrar
               </Button>
 
+              <Box display="flex" alignItems="center" justifyContent="center">
+                <Typography align="center">Já tem uma conta?</Typography>
+              </Box>
+              <Link to="/login" className="btn-ent">
+                <Typography variant="subtitle1" gutterBottom align="center">
+                  Entre aqui ➜
+                </Typography>
+              </Link>
             </Box>
           </form>
         </Box>
       </Grid>
     </Grid>
-  )
+  );
 }
 
-export default CadastroUsuario
+export default CadastroUsuario;

@@ -28,7 +28,7 @@ export default function SobreNos() {
   const responsive = {
     0: { items: 1 },
     568: { items: 2 },
-    1024: { items: 3 },
+    1024: { items: 4 },
   };
 
   const imagens = [
@@ -171,7 +171,7 @@ export default function SobreNos() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Saiba Mais</Button>
+        <Button size="small"  >Saiba Mais</Button>
       </CardActions>
     </Card>,
   ];
@@ -187,24 +187,24 @@ export default function SobreNos() {
           />
           <div className="about-bg">
             <p className="about-text">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Bem Fazer é uma
-              plataforma desenvolvida para promover a facilitação da comunicação
-              entre Organizações Não Governamentais e pessoas doadoras.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sete mulheres se
+              juntaram com um sonho de poder inovar e ajudar as pessoas. Com
+              isso, em 2022, vimos a necessidade de ajudar e incentivar ONG's.
+              Percebemos que umas das maiores dificuldades para acontecer esta
+              conexão é a falta de informação.Como por exemplo, localização,
+              contatos e qual a forma que as pessoas podem ajudar.
               <br />
               <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Centralizamos ONGs
-              que trabalham para reforçar o planejamento nacional e regional de
-              desenvolvimento, apoiando relações econômicas, sociais e
-              ambientais positivas entre áreas urbanas, periurbanas e rurais e
-              pessoas que tem disponibilidade de ajudar financeiramente, com
-              materiais ou tempo.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sabendo disso,
+              identificamos que um dos grandes obstáculos para que aconteca essa
+              comunicação entre voluntários e organizações, é a falta de
+              estrutura.
               <br />
               <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Iniciada em 2022 e
-              criado por sete mulheres desenvolvedoras que se dedicaram a ajudar
-              na busca pela resposta da questão “Como será que podemos
-              contribuir para tornar a sua cidade ou comunidade inclusiva,
-              segura, resiliente e sustentável?”
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Então nasce o Bem
+              Fazer, dando vida estrutural para facilitar a conexão de pessoas e
+              ONG's. A ideia do Bem Fazer é fazer fluir a comunicação entre
+              voluntários e fomentar o terceiro setor.
             </p>
           </div>
         </Stack>
@@ -226,88 +226,133 @@ export default function SobreNos() {
           />
         </Box>
       </div>
+
       <div className="depoimentos">
         <div className="faixa">
           <p className="faixa-margin">DEPOIMENTOS</p>
           <hr></hr>
         </div>
 
-        <Box display="flex" className="avatar">
-          <div>
-            <Stack direction="row" spacing={2}>
-              <Avatar
-                alt="Remy Sharp"
-                src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-                sx={{ width: 100, height: 100 }}
-              />
-              <p className="depo">
-                A plataforma foi essencial no crescimento de nossa ONG. Com a
-                Bem Fazer conseguimos chegar a muito mais pessoas que quiser
-                ajudar.
-              </p>
-            </Stack>
-            <div className="star">
-              <StarIcon></StarIcon>
-              <StarIcon></StarIcon>
-              <StarIcon></StarIcon>
-              <StarIcon></StarIcon>
-              <StarHalfIcon></StarHalfIcon>
-            </div>
-          </div>
-
-          <div>
-            <Stack direction="row" spacing={2}>
+        <section className="page-contain">
+          <a href="#" className="data-card">
+            <h4>Francisco Diniz</h4>
+            <p className="p-depo">
+              A plataforma foi essencial no crescimento de nossa ONG. Com a Bem
+              Fazer conseguimos chegar a muito mais pessoas que quiser ajudar.
+            </p>
+            <div className="avatar">
               <Avatar
                 alt="Remy Sharp"
                 src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                sx={{ width: 100, height: 100 }}
+                sx={{ width: 80, height: 80 }}
               />
-              <p className="depo">
-                Acredito que com a Bem Fazer os processos tenham se tornado mais
-                centralizados. Era o que nossa ONG precisava.
-              </p>
-            </Stack>
-            <div className="star">
-              <StarIcon></StarIcon>
-              <StarIcon></StarIcon>
-              <StarIcon></StarIcon>
-              <StarIcon></StarIcon>
-              <StarIcon></StarIcon>
             </div>
-          </div>
+            <span className="link-text">
+              <svg
+                width="25"
+                height="16"
+                viewBox="0 0 25 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+                  fill="#E55C51"
+                />
+              </svg>
+            </span>
+          </a>
 
-          <div>
-            <Stack direction="row" spacing={2}>
+          <a href="#" className="data-card">
+            <h4>Claudia Fanzioni</h4>
+            <p className="p-depo">
+              Acredito que com a Bem Fazer os processos tenham se tornado mais
+              centralizados. Era o que nossa ONG precisava e buscavámos.
+            </p>
+            <div className="avatar">
               <Avatar
                 alt="Remy Sharp"
                 src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                sx={{ width: 100, height: 100 }}
+                sx={{ width: 80, height: 80 }}
               />
-              <p className="depo">
-                A Bem Fazer me auxiliou muito na conexão com instituições que
-                precisam de ajuda. Com certeza essa plataforma muda vidas!!
-              </p>
-            </Stack>
-            <div className="star">
-              <StarIcon></StarIcon>
-              <StarIcon></StarIcon>
-              <StarIcon></StarIcon>
-              <StarIcon></StarIcon>
-              <StarIcon></StarIcon>
             </div>
-          </div>
-        </Box>
+            <span className="link-text">
+              <svg
+                width="25"
+                height="16"
+                viewBox="0 0 25 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+                  fill="#E55C51"
+                />
+              </svg>
+            </span>
+          </a>
+
+          <a href="#" className="data-card">
+            <h4>Marcio Furtado</h4>
+            <p className="p-depo">
+              A Bem Fazer me auxiliou muito na conexão com instituições que
+              precisam de ajuda. Com certeza essa plataforma muda vidas!!
+            </p>
+            <div className="avatar">
+              <Avatar
+                alt="Remy Sharp"
+                src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+                sx={{ width: 80, height: 80 }}
+              />
+            </div>
+            <span className="link-text">
+              <svg
+                width="25"
+                height="16"
+                viewBox="0 0 25 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+                  fill="#E55C51"
+                />
+              </svg>
+            </span>
+          </a>
+        </section>
       </div>
 
-      <Box display='flex'>
-        <img className="img-depo" src="https://imgur.com/BJifacN.png" alt="" />
-        <img className="img-depo1" src="https://imgur.com/BJifacN.png" alt="" />
-        <img className="img-depo2" src="https://imgur.com/BJifacN.png" alt="" />
-      </Box>
-
-      <div className="button">
+      <div>
         <Link to="/cadastrousuario">
-          <button className="button1">Saiba mais ➜</button>
+          <button className="button-sn">
+            <span className="text-decorator-none1">Saiba Mais</span>
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="37"
+                cy="37"
+                r="35.5"
+                stroke="white"
+                stroke-width="3"
+              ></circle>
+              <path
+                d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                fill="white"
+              ></path>
+            </svg>
+          </button>
         </Link>
       </div>
     </div>

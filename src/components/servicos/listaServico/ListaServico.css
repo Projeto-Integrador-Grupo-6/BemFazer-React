@@ -10,17 +10,32 @@
 }
 
 .card-ong {
+    min-width: 300px;
     max-width: 250px;
     min-height: 200px;
     max-height: 500px;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-att {
-    position: fixed;
+    background-color: #E55C51 !important;
+}
+
+.btn-doar {
     background-color: #E55C51 !important;
 }
 
 .btn-del {
-    position: fixed;
-    background-color: #E55C5185 !important;
+    background-color: white !important;
+    border: 0.5px solid #E55C51 !important;
+    color: #E55C51 !important;
+    font-weight: bold !important;
+    box-shadow: none !important;
+}
+
+.btn-del:hover{
+    font-weight: bold;
+    background-color: #E55C51 !important;
+    color: white !important;
 }

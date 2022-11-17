@@ -47,11 +47,11 @@ function ListaCat() {
     return (
         <>{
             categorias.map(categoria => (
-                <Box m={2} className='box-card'>
+                <Box m={2} className='box-card' >
                     <Card variant="outlined">
                         <CardContent>
                             <Typography color="textSecondary" gutterBottom>
-                                Tipos de ONGs
+                                Tipos de Ongs
                             </Typography>
                             <Typography variant="h5" component="h2">
                                 {categoria.tipo}
