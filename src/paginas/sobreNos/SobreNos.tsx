@@ -171,7 +171,7 @@ export default function SobreNos() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Saiba Mais</Button>
+        <Button size="small"  >Saiba Mais</Button>
       </CardActions>
     </Card>,
   ];
@@ -243,7 +243,7 @@ export default function SobreNos() {
             <div className="avatar">
               <Avatar
                 alt="Remy Sharp"
-                src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
                 sx={{ width: 80, height: 80 }}
               />
             </div>
@@ -274,7 +274,7 @@ export default function SobreNos() {
             <div className="avatar">
               <Avatar
                 alt="Remy Sharp"
-                src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
                 sx={{ width: 80, height: 80 }}
               />
             </div>

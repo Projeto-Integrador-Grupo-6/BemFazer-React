@@ -120,7 +120,7 @@ function ListaServico() {
                       variant="contained"
                       size="small"
                       color="secondary"
-                      className="btn-del"
+                      className="btn-doar"
                     >
                       DOAR
                     </Button>

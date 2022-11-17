@@ -96,7 +96,7 @@ function CadastroUsuario() {
   function selectTipo(event: ChangeEvent<any>) {
     setUser({
       ...user,
-      tipoUser: event.target.value
+      tipoUser: event.target.value,
     });
   }
 
@@ -183,32 +183,32 @@ function CadastroUsuario() {
 
             {/*<TextField value={user.tipoUser} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} id="tipoUser" label="Tipo Usuário" variant="outlined" name="tipoUser" margin="normal" fullWidth />*/}
 
-            <FormControl fullWidth>
+            <FormControl fullWidth className="btn-tipo">
               <Select
                 labelId="demo-simple-select-helper-label"
                 id="demo-simple-select-helper"
                 value={user.tipoUser}
                 onChange={selectTipo}
               >
+                <MenuItem value=""> Escolha o tipo de usuário: </MenuItem>
                 <MenuItem value="ong">ONG</MenuItem>
                 <MenuItem value="voluntario">Voluntário</MenuItem>
               </Select>
             </FormControl>
 
             <Box marginTop={2} textAlign="center">
-              <Link to="/login" className="text-decorator-none">
-                <Button
-                  className="btnCancelar"
-                  variant="contained"
-                  color="secondary"
-                >
-                  Cancelar
-                </Button>
-              </Link>
-
-              <Button type="submit" variant="contained" color="primary">
+              <Button type="submit" variant="contained" className="btn-cadastrar">
                 cadastrar
               </Button>
+
+              <Box display="flex" alignItems="center" justifyContent="center">
+                <Typography align="center">Já tem uma conta?</Typography>
+              </Box>
+              <Link to="/login" className="btn-ent">
+                <Typography variant="subtitle1" gutterBottom align="center">
+                  Entre aqui ➜
+                </Typography>
+              </Link>
             </Box>
           </form>
         </Box>

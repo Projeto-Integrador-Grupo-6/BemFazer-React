@@ -10,12 +10,19 @@
 }
 
 .card-ong {
+    min-width: 300px;
     max-width: 250px;
     min-height: 200px;
     max-height: 500px;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-att {
+    background-color: #E55C51 !important;
+}
+
+.btn-doar {
     background-color: #E55C51 !important;
 }
 
