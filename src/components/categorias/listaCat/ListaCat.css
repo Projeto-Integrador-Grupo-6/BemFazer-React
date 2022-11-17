@@ -1,0 +1,29 @@
+.text-decorator-none {
+    text-decoration: none;
+}
+
+.box-card {
+    max-width: 40vw;
+    max-height: 50vh !important;
+    transform: translateX(75%);
+    margin-bottom: 15px;
+  }
+
+.button-del {
+   background-color: #E55C5185 !important;
+   box-shadow: none !important;
+   transform: translateX(15em);
+   color: #fff !important;
+}
+
+.button-del:hover {
+    font-weight: bold;
+    background-color: #E55C5190 !important;
+}
+
+.marginLeft1 {
+    background-color: #E55C51 !important;
+    box-shadow: none !important;
+    transform: translateX(32em);
+    color: #fff !important;
+}

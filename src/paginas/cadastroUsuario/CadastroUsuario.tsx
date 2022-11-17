@@ -2,11 +2,127 @@ import React, { useState, useEffect, ChangeEvent } from 'react';
 import { Grid, Typography, TextField, Button } from "@material-ui/core";
 import { Link, useNavigate } from "react-router-dom";
 import { Box } from "@mui/material";
+import { cadastroUsuario } from "../../services/Service";
+import User from '../../models/User';
 import './CadastroUsuario.css';
+import { toast } from 'react-toastify';
 
 function CadastroUsuario() {
+  let history = useNavigate();
+
+  const [confirmarSenha, setConfirmarSenha] = useState<String>("");
+  const [user, setUser] = useState<User>({
+    id: 0,
+    nome: '',
+    email: '',
+    senha: '',
+    foto: '',
+    tipoUser: ''
+  })
+
+  const [userResult, setUserResult] = useState<User>({
+    id: 0,
+    nome: '',
+    email: '',
+    senha: '',
+    foto: '',
+    tipoUser: ''
+  })
+
+  function confirmarSenhaHandle(event: ChangeEvent<HTMLInputElement>) {
+    setConfirmarSenha(event.target.value)
+  }
+
+  function updateModel(event: ChangeEvent<HTMLInputElement>) {
+    setUser({
+      ...user,
+      [event.target.name]: event.target.value
+    })
+  }
+
+  async function onSubmit(event: ChangeEvent<HTMLFormElement>) {
+    event.preventDefault()
+
+    if (confirmarSenha == user.senha) {
+      try {
+        await cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult);
+        toast.success("Usuário cadastrado com sucesso!", {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: false,
+          theme: "colored",
+          progress: undefined,
+      });
+      } catch (error) {
+        toast.error("Falha interna ao cadastrar!", {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: false,
+          theme: "colored",
+          progress: undefined,
+      });
+      }
+    } else {
+      toast.error("Dados inconsistentes. Favor verificar as informações de cadastro!", {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        theme: "colored",
+        progress: undefined,
+    });
+
+      setUser({ ...user, senha: '' });
+      setConfirmarSenha('');
+    }
+  }
+  useEffect(() => {
+    if (userResult.id !== 0) {
+      history('/login');
+    }
+  }, [userResult]);
+
   return (
-    <div>CadastroUsuario</div>
+    <Grid container direction="row" justifyContent="center" alignItems="center">
+      <Grid item xs={6} className="imagem2"></Grid>
+
+      <Grid item xs={6} alignItems="center">
+        <Box paddingX={10}>
+          <form onSubmit={onSubmit}>
+            <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className="textos2" >Cadastrar</Typography>
+
+            <TextField value={user.nome} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} id="nome" label="Nome" variant="outlined" name="nome" margin="normal" fullWidth />
+            <TextField value={user.email} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} id="email" label="Email" variant="outlined" name="email" margin="normal" fullWidth />
+            <TextField value={user.foto} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} id="foto" label="Url da foto" variant="outlined" name="foto" margin="normal" fullWidth />
+            <TextField value={user.senha} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} id="senha" label="Senha" variant="outlined" name="senha" margin="normal" type="password" fullWidth />
+            <TextField value={confirmarSenha} onChange={(event: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(event)} id="confirmarSenha" label="Confirmar Senha" variant="outlined" name="confirmarSenha" margin="normal" type="password" fullWidth />
+
+            <TextField value={user.tipoUser} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} id="tipoUser" label="Tipo Usuário" variant="outlined" name="tipoUser" margin="normal" fullWidth />
+
+            <Box marginTop={2} textAlign="center">
+              <Link to="/login" className="text-decorator-none">
+                <Button className="btnCancelar" variant="contained" color="secondary">
+                  Cancelar
+                </Button>
+              </Link>
+
+              <Button type="submit" variant="contained" color="primary">
+                cadastrar
+              </Button>
+
+            </Box>
+          </form>
+        </Box>
+      </Grid>
+    </Grid>
   )
 }
 

@@ -5,11 +5,15 @@
   justify-content: space-between;
   width: 100%;
 }
+.cursor {
+  cursor: pointer;
+  color: black;
+}
 
 .navbar2 {
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 60%;
 }
 
 .navbar1 {
@@ -21,10 +25,6 @@
   color: #000;
 }
 
-.sair {
-  margin-right: 2em;
-}
-
 .login {
   display: flex;
   justify-content: center;
@@ -34,4 +34,18 @@
   right: 0;
   float: right;
   margin-left: auto;
+  gap: 15px;
+}
+
+.login2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  position: relative;
+  right: 10;
+  float: right;
+  margin-left: auto;
+  gap: 30px;
+  font-size: 20px;
 }

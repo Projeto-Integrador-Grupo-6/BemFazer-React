@@ -9,6 +9,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { useSelector } from "react-redux";
+import { TokenState } from "../../../store/tokens/tokensReducer";
 
 // const settings = ['Profile', 'Account', 'Logout'];
 
@@ -30,58 +32,98 @@ function Navbar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-  return (
-    <>
+
+  const token = useSelector<TokenState, TokenState["tokens"]>(
+    (state) => state.tokens
+);
+
+return (
+  <>
+    {token === '' ? (
       <AppBar className="navbar" position="relative">
         <Toolbar variant="dense">
           <Box>
             <Box className="logo">
-              <img src="https://i.imgur.com/JMZuidt.png" alt="" width="30px" height="30px" />
-              <img src="https://i.imgur.com/Qey0M0E.png" alt="" width="140px" height="30px" />
+              <Link to="/home" className="text-decorator-none">
+                <img
+                  src="https://i.imgur.com/JMZuidt.png"
+                  alt=""
+                  width="30px"
+                  height="30px"
+                />
+                <img
+                  src="https://i.imgur.com/Qey0M0E.png"
+                  alt=""
+                  width="140px"
+                  height="30px"
+                />
+              </Link>
+            </Box>
+          </Box>
+
+          <Box className="login2">
+            <Link to="/login" className="text-decorator-none">
+              Login
+            </Link>
+            <Link to="/cadastrousuario" className="text-decorator-none">
+              Cadastrar
+            </Link>
+          </Box>
+        </Toolbar>
+      </AppBar>
+    ) : (
+      <AppBar className="navbar" position="relative">
+        <Toolbar variant="dense">
+          <Box>
+            <Box className="logo">
+              <Link to="/home" className="text-decorator-none">
+                <img
+                  src="https://i.imgur.com/JMZuidt.png"
+                  alt=""
+                  width="30px"
+                  height="30px"
+                />
+                <img
+                  src="https://i.imgur.com/Qey0M0E.png"
+                  alt=""
+                  width="140px"
+                  height="30px"
+                />
+              </Link>
             </Box>
           </Box>
 
           <Box className="navbar2">
-            <Box mx={1} className="cursor">
-              <Typography variant="h6" style={{
-                color: '#000'
-              }} color="primary">
-                Home
+            <Link to="/categorias" className="text-decorator-none">
+              <Typography className="cursor" variant="h6">
+                ONGs
               </Typography>
-            </Box>
-            <Box mx={1} className="cursor">
-              <Typography variant="h6" style={{
-                color: '#000'
-              }} color="primary">
-                Quem Ajudar
-              </Typography>
-            </Box>
-            <Box mx={1} className="cursor">
-              <Typography variant="h6" style={{
-                color: '#000'
-              }} color="primary">
-                Sobre Nós
-              </Typography>
-            </Box>
-
-          </Box>
-
-          <Box className="login">
-            <Link to="/login" className="text-decorator-none">
-              Login
             </Link>
-            <Link to='/cadastrousuario'>
-              <ShoppingCartIcon color="action"></ShoppingCartIcon>
+
+            <Link to="/formularioCategoria" className="text-decorator-none">
+              <Typography className="cursor" variant="h6">
+                Cadastrar Ong
+              </Typography>
+            </Link>
+
+            <Link to="/formularioServico" className="text-decorator-none">
+              <Typography className="cursor" variant="h6">
+                Cadastrar Serviço
+              </Typography>
             </Link>
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
+          <Box sx={{ flexGrow: 0 }} className="login">
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar
+                  alt="Remy Sharp"
+                  src="https://github.com/Projeto-Integrador-Grupo-6.jpg"
+                />
               </IconButton>
             </Tooltip>
-            <Menu sx={{ mt: '45px' }}
+            <Menu
+              sx={{ mt: '45px' }}
               id="menu-appbar"
               anchorEl={anchorElUser}
               anchorOrigin={{
@@ -96,18 +138,19 @@ function Navbar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {/* {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography>{setting}</Typography>
-                </MenuItem>
-              ))} */
+              {
+                /* {settings.map((setting) => (
+          <MenuItem key={setting} onClick={handleCloseUserMenu}>
+            <Typography>{setting}</Typography>
+          </MenuItem>
+        ))} */
                 <MenuItem onClick={handleCloseUserMenu}>
                   <Box>
                     <Box>
                       <Typography>Minha Conta</Typography>
                     </Box>
                     <hr />
-                    <Link to='./home'>
+                    <Link to="./home">
                       <Box>
                         <Typography>Logout</Typography>
                       </Box>
@@ -117,11 +160,11 @@ function Navbar() {
               }
             </Menu>
           </Box>
-
         </Toolbar>
       </AppBar>
-    </>
-  );
-}
+    )}
+  </>
+);
 
+  }
 export default Navbar;
