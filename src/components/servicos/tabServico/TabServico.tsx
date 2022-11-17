@@ -32,6 +32,8 @@ function TabServico() {
                     <Typography variant="body1" gutterBottom color="textPrimary" align="justify">
                         <SobreNos />
                     </Typography>
+                    </TabPanel>
+                <TabPanel value="3">
                     <Typography variant="body1" gutterBottom color="textPrimary" align="justify">
                         <Time />
                     </Typography>
