@@ -1,19 +1,43 @@
+.box-time {
+  gap: 100px;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: center;
+  
+}
+.box-time2 {
+  gap: 100px;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-20px);
+  z-index: 1;
+  position:relative;
+}
+.cargo{
+  font-size: 10px;
+  margin-top: 0;
+
+}
+
 .card-time {
   width: 200px;
   height: 250px;
   background: white;
-  border: 2px solid orange;
+  border: 2px solid #E55C51;
   border-radius: 5px;
   text-align: center;
   color: black;
   font-family: inherit;
   z-index: 1;
+  margin-right: 30px;
+  /* background-color: #E55C51; */
 }
 
 .img-time {
   /* background-image: url('https://i.imgur.com/FjFePm5.jpg'); */
   display: flex;
-  margin: 60px auto 10px auto;
+  margin: 30px auto 10px auto;
   width: 75px;
   height: 75px;
   border: 1px solid #f0f0f0;
@@ -33,6 +57,13 @@
 .icon {
   color: black;
 }
+.css-i4bv87-MuiSvgIcon-root {
+  font-size: 50px !important;
+}
+.css-i4bv87-MuiSvgIcon-root:hover{
+  font-size: 70px !important;
+  color: #E55C51 !important;
+}
 
 .texto-card {
   /* opacity: 0;
@@ -41,6 +72,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  /* font-size: 30px; */
 }
 
 .texto-card a {
@@ -53,6 +85,7 @@
   padding: 10px;
   font-weight: 500;
   font-size: 18px;
+  padding-bottom: 0;
 }
 
 svg {
