@@ -3,8 +3,10 @@ import { TabContext, TabPanel } from '@material-ui/lab';
 import { Box } from '@mui/material';
 import React, { useState } from 'react'
 import SobreNos from '../../../paginas/sobreNos/SobreNos';
+import Time from '../../../paginas/time/Time';
 import ListaServico from '../listaServico/ListaServico';
 import './TabServico.css';
+
 
 function TabServico() {
     const [value, setValue] = useState('1')
@@ -18,6 +20,7 @@ function TabServico() {
                     <Tabs centered indicatorColor="secondary" onChange={handleChange} className="barraCor" >
                         <Tab label="Todos os Serviços" value="1" />
                         <Tab label="Sobre nós" value="2" />
+                        <Tab label="Sobre a equipe" value="3"/>
                     </Tabs>
                 </AppBar>
                 <TabPanel value="1" >
@@ -28,6 +31,11 @@ function TabServico() {
                 <TabPanel value="2">
                     <Typography variant="body1" gutterBottom color="textPrimary" align="justify">
                         <SobreNos />
+                    </Typography>
+                    </TabPanel>
+                <TabPanel value="3">
+                    <Typography variant="body1" gutterBottom color="textPrimary" align="justify">
+                        <Time />
                     </Typography>
                 </TabPanel>
             </TabContext>
