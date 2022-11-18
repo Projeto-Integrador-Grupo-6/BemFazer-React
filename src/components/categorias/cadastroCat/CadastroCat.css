@@ -5,7 +5,7 @@
 .container__ong {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
   position: relative;
 }
@@ -22,10 +22,11 @@
 
 .ong__position {
   position: absolute;
-  width: 100%;
+  width: auto;
   height: 101vh;
   top: 0px;
-  left: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .block__left {
