@@ -34,6 +34,7 @@ function Footer() {
               <a
                 href="https://github.com/Projeto-Integrador-Grupo-6"
                 target="_blank"
+                className="text-decorator-none"
               >
                 <GitHubIcon className="redes" />
               </a>
@@ -51,7 +52,7 @@ function Footer() {
               </Typography>
             </Box>
             <Box>
-              <a target="_blank" href="https://brasil.generation.org/">
+              <a target="_blank" href="https://brasil.generation.org/" className="text-decorator-none">
                 <Typography
                   variant="subtitle2"
                   gutterBottom

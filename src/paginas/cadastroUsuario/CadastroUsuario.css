@@ -1,14 +1,23 @@
 .imagem2 {
-    background-image: url(https://imgur.com/Y6gGbbV.png);
+    background-image: url('https://imgur.com/FaIf3Wl.png');
     background-repeat: no-repet;
-    width: 60vh;
-    min-height: 70vh;
+    width: 100vh;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
 }
 
+.MuiSelect-select.MuiSelect-select {
+    margin-bottom: 10px;
+}
+
+.MuiSelect-native-input {
+    margin-bottom: 10px;
+}
+
 .textos2 {
     font-weight: bold !important;
+    margin-top: 60px !important;
 }
 
 .btnCancelar {
@@ -36,8 +45,9 @@
 }
 
 .btn-cancelar {
-    background-color: #E55C51 !important;
-    color: #fff !important;
+    background-color: #fff !important;
+    color: #E55C51 !important;
+    border: 1px solid #E55C51 !important;
     font-weight: bold !important;
     margin-bottom: 10px !important;
     margin-right: 30px !important;

@@ -17,11 +17,12 @@
 }
 
 .btn-logar {
-    background-color: #E55C51 !important;
+    background-color: #e55b51db !important;
     color: white !important;
     font-weight: bold !important;
 }
 
 .btn-logar:hover {
-    background-color: #E55C51;
+    background-color: #E55C51 !important;
+    opacity: 1;
 }
