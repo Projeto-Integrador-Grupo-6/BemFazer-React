@@ -6,6 +6,11 @@
     background-color: #e55b51 !important;
 }
 
-.btn-barra {
-    color: #fff !important;
+.btn-tab {
+  font-family: 'Lexend', sans-serif !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  color: #fff !important;
+  opacity: 1 !important;
+
 }

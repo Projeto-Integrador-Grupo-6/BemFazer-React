@@ -108,7 +108,7 @@ function CadastroUsuario() {
         <Box paddingX={10}>
           <form onSubmit={onSubmit}>
             <Typography
-              variant="h3"
+              variant="h4"
               gutterBottom
               color="textPrimary"
               component="h3"
@@ -209,6 +209,10 @@ function CadastroUsuario() {
               
             </Box>
           </form>
+
+          <div className="logo-login2">
+            <img src="https://imgur.com/8jjQm8b.png" alt="" />
+          </div>
         </Box>
       </Grid>
     </Grid>

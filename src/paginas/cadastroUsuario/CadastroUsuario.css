@@ -16,6 +16,7 @@
 }
 
 .textos2 {
+    color: #E55C51 !important;
     font-weight: bold !important;
     margin-top: 60px !important;
 }
@@ -51,4 +52,10 @@
     font-weight: bold !important;
     margin-bottom: 10px !important;
     margin-right: 30px !important;
+}
+
+.logo-login2 img{
+    max-width: 250px;
+    max-height: 2150px;
+    transform: translate(60%, -1300%);
 }

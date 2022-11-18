@@ -7,4 +7,5 @@
 .btn-final:hover {
   background-color: #E55C51 !important;
   font-size: bold !important;
+  opacity: 1;
 }

@@ -38,17 +38,7 @@ function Home() {
         <Grid>
         <Box
           className='container'>
-          <Box paddingX={20} >
-            <Typography variant="h3"
-              gutterBottom color="textPrimary"
-              component="h3" align="center"
-              style={{
-                color: "white",
-                fontWeight: "bold"
-              }}
-            >JUNTOS SOMOS MAIS
-            </Typography>
-          </Box>
+          
         </Box>
         </Grid>
         <Grid xs={12} className="postagens">

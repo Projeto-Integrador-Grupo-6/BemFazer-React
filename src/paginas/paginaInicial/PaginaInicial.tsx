@@ -7,9 +7,9 @@ function PaginaInicial() {
     <>
       <div>
         <div className="bk-paginicial">
-          <img src="https://imgur.com/GH4QHiF.png" alt="crianças sorrindo" />
+          <img src="https://imgur.com/8hZkgKC.png" alt="crianças sorrindo" />
         </div>
-
+        
         <Link to='/login'>
         <a className="fancy" href="#">
           <span className="top-key"></span>
@@ -18,6 +18,10 @@ function PaginaInicial() {
           <span className="bottom-key-2"></span>
         </a>
         </Link>
+
+        <div className="img-inicial">
+        <img src="https://imgur.com/8jjQm8b.png" alt="" />
+        </div>
       </div>
     </>
   );

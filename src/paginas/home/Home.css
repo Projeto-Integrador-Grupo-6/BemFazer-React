@@ -5,8 +5,8 @@
 }
 
 .container {
-  background-image: url(../../assets/banner.jpeg);
-  height: 100vh;
+  background-image: url('https://imgur.com/nkdl3in.png');
+  height: 88vh;
   background-size: cover;
   width: 100%;
   position: relative;

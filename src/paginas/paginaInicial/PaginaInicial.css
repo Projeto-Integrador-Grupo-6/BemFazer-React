@@ -1,10 +1,23 @@
 .bk-paginicial img {
     max-width: 100%;
+    max-height: 100%;
 }
+
+.img-inicial img {
+    transform: translate(20%, -1530%);
+    max-width: 250px;
+    max-height: 2150px;
+}
+
+.texto-paginicial {
+    transform: translate(50%, -2000%);
+}
+
+/* CSS BOTAO */
 
 .fancy {
     background-color: transparent;
-    border: 2px solid #000;
+    border: 2px solid #fff;
     border-radius: 0;
     box-sizing: border-box;
     color: #E55C51;
@@ -58,7 +71,7 @@
     top: -2px;
     left: 0.625rem;
     position: absolute;
-    background: #e8e8e8;
+    background: #000;
     transition: width 0.5s ease-out, left 0.3s ease-out;
    }
    
@@ -68,7 +81,7 @@
     right: 1.875rem;
     bottom: -2px;
     position: absolute;
-    background: #e8e8e8;
+    background: #000;
     transition: width 0.5s ease-out, right 0.3s ease-out;
    }
    
@@ -78,12 +91,12 @@
     right: 0.625rem;
     bottom: -2px;
     position: absolute;
-    background: #e8e8e8;
+    background: #fff;
     transition: width 0.5s ease-out, right 0.3s ease-out;
    }
    
    .fancy:hover {
-    color: #E55C51;
+    color: #fff;
     background: black;
    }
    
@@ -93,7 +106,7 @@
    }
    
    .fancy:hover .text {
-    color: #E55C51;
+    color: #fff;
     padding-left: 1.5em;
    }
    

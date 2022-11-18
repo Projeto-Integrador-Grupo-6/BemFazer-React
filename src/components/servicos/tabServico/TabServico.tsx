@@ -18,9 +18,9 @@ function TabServico() {
             <TabContext value={value}>
                 <AppBar position="static">
                     <Tabs centered indicatorColor="secondary" onChange={handleChange} className="barraCor" >
-                        <Tab label="Todos os Serviços" value="1" />
-                        <Tab label="Sobre nós" value="2" />
-                        <Tab label="Sobre a equipe" value="3"/>
+                        <Tab label="Todos os Serviços" value="1" className='btn-tab'/>
+                        <Tab label="Sobre nós" value="2" className='btn-tab'/>
+                        <Tab label="Sobre a equipe" value="3" className='btn-tab'/>
                     </Tabs>
                 </AppBar>
                 <TabPanel value="1" >

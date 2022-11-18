@@ -23,7 +23,7 @@ function ListaServico() {
 
   const tipoUser = useSelector<TokenState, TokenState["tipoUser"]>(
     (state) => state.tipoUser
-  )
+  );
 
   let history = useNavigate();
 
@@ -57,16 +57,18 @@ function ListaServico() {
 
   return (
     <>
-        {servicos.length === 0 &&   <div id="js-preloader" className="js-preloader">
-      <div className="preloader-inner">
-          <span className="dot"></span>
-          <div className="dots">
+      {servicos.length === 0 && (
+        <div id="js-preloader" className="js-preloader">
+          <div className="preloader-inner">
+            <span className="dot"></span>
+            <div className="dots">
               <span></span>
               <span></span>
               <span></span>
+            </div>
           </div>
-      </div>
-  </div>}
+        </div>
+      )}
 
       <div className="box-servico">
         {servicos.map((servico) => (
@@ -86,65 +88,59 @@ function ListaServico() {
                   {servico.categorias?.tipo}
                 </Typography>
               </CardContent>
-             
-            {tipoUser === 'ong' ? (
-               <CardActions>
-               <Box display="flex" justifyContent="center" mb={1.5}>
 
-               <Link
-                   to={`/deletarServico/${servico.id}`}
-                   className="text-decorator-none"
-                 >
-                   <Box mx={1}>
-                     <Button
-                       variant="contained"
-                       size="small"
-                       color="secondary"
-                       className="btn-del"
-                     >
-                       deletar
-                     </Button>
-                   </Box>
-                 </Link>
-
-               <Link
-                   to={`/formularioServico/${servico.id}`}
-                   className="text-decorator-none"
-                 >
-                   <Box mx={1}>
-                     <Button
-                       variant="contained"
-                       size="small"
-                       color="primary"
-                       className="btn-att"
-                     >
-                       atualizar
-                     </Button>
-                   </Box>
-                 </Link>
-                 
-                 
-
-                 
-               </Box>
-             </CardActions>
-            ) : (
-              <CardActions>
-              <Box display="flex" justifyContent="center" mb={1.5}>
-                  <Box mx={1}>
-                    <Button
-                      variant="contained"
-                      size="small"
-                      color="secondary"
-                      className="btn-doar"
+              {tipoUser === "ong" ? (
+                <CardActions>
+                  <Box display="flex" justifyContent="center" mb={1.5}>
+                    <Link
+                      to={`/deletarServico/${servico.id}`}
+                      className="text-decorator-none"
                     >
-                      DOAR
-                    </Button>
-                  </Box>
-              </Box>
-            </CardActions>
-            )}
+                      <Box mx={1}>
+                        <Button
+                          variant="contained"
+                          size="small"
+                          color="secondary"
+                          className="btn-del"
+                        >
+                          deletar
+                        </Button>
+                      </Box>
+                    </Link>
 
+                    <Link
+                      to={`/formularioServico/${servico.id}`}
+                      className="text-decorator-none"
+                    >
+                      <Box mx={1}>
+                        <Button
+                          variant="contained"
+                          size="small"
+                          color="primary"
+                          className="btn-att"
+                        >
+                          atualizar
+                        </Button>
+                      </Box>
+                    </Link>
+                  </Box>
+                </CardActions>
+              ) : (
+                <CardActions>
+                  <Box display="flex" justifyContent="center" mb={1.5}>
+                    <Box mx={1}>
+                      <Button
+                        variant="contained"
+                        size="small"
+                        color="secondary"
+                        className="btn-doar"
+                      >
+                        DOAR
+                      </Button>
+                    </Box>
+                  </Box>
+                </CardActions>
+              )}
             </Card>
           </Box>
         ))}

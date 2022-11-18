@@ -77,7 +77,7 @@ function ListaCat() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Box display="flex" justifyContent="flex-end" mb={1.5}>
+              <Box display="flex" justifyContent="flex-end" style={{marginLeft: '330px'}} mb={1.5}>
               <Link
                   to={`/deletarCategoria/${categoria.id}`}
                   className="text-decorator-none"
