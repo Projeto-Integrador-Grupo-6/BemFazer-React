@@ -1,3 +1,83 @@
 .topo {
-    margin-top: 20px;
+  margin-top: 20px;
+}
+
+.container__ong {
+  display: flex;
+  flex-direction: column;
+  width: 99vw;
+  height: 100vh;
+  position: relative;
+}
+
+.sub__container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ong__position {
+  position: absolute;
+  width: auto;
+  height: 101vh;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.block__left {
+  width: 100%;
+  z-index: 3;
+}
+
+.block__left h3,
+h1,
+h4 {
+  width: 90%;
+  padding-left: 50px;
+}
+
+.block__left h4,
+h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.block__left h1 {
+  width: 100%;
+  text-align: left;
+  font-size: 50px;
+}
+
+.block__right {
+  width: 100%;
+  height: 100vh;
+}
+
+
+.block__right img {
+  width: 100%;
+  height: 100%;
+}
+
+.form {
+  display: flex;
+  width: 40vw;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.btn-final-ong {
+  margin-left: 20px !important;
+  background-color: #e55b51d1 !important;
+  color: white !important;
+  display: inline-flex;
+}
+
+#tipo {
+  width: 100% !important;
 }
