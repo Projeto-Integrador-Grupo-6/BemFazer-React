@@ -21,6 +21,7 @@ import Time from './paginas/time/Time';
 import PaginaInicial from './paginas/paginaInicial/PaginaInicial';
 
 
+
 function App() {
   return (
     <Provider store={store}>

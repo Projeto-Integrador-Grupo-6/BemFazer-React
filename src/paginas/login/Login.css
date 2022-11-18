@@ -4,10 +4,10 @@
 }
 
 .imagem{
-    background-image: url(https://i.imgur.com/UARUrry.png);
+    background-image: url(https://imgur.com/DdUpCQO.png);
     background-repeat: no-repeat;
     width: 100vh;
-    min-height: 90vh;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
 }
@@ -25,4 +25,10 @@
 .btn-logar:hover {
     background-color: #E55C51 !important;
     opacity: 1;
+}
+
+.logo-login img{
+    max-width: 250px;
+    max-height: 2150px;
+    transform: translate(30%, -950%);
 }
