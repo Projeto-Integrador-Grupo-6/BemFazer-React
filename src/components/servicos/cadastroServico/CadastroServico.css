@@ -1,10 +1,10 @@
 .btn-final {
-    background-color: #e55b51d1 !important;
-    color: white !important;
-    margin-left: 31em !important;
+  background-color: #e55b51d1 !important;
+  color: white !important;
+  margin-left: 31em !important;
 }
 
 .btn-final:hover {
-    background-color: #E55C51 !important;
-    font-size: bold !important;
+  background-color: #E55C51 !important;
+  font-size: bold !important;
 }
