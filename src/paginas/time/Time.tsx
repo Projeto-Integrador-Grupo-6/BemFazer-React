@@ -63,13 +63,13 @@ function Time() {
           <p className="texto-card">
             <a
               target="_blank"
-              href="https://uiverse.io/gagan-gv/afraid-otter-91"
+              href="https://www.linkedin.com/in/choinina/"
             >
               <GitHubIcon />
             </a>
             <a
               target="_blank"
-              href="https://uiverse.io/gagan-gv/afraid-otter-91"
+              href="https://github.com/techchoi"
             >
               <LinkedInIcon />
             </a>
@@ -79,7 +79,7 @@ function Time() {
         <div className="card-time">
           <div className="img-time">
             <img
-              src="https://i.imgur.com/ihhDc1E.jpg"
+              src="https://i.imgur.com/prRjLLu.jpg"
               alt="Foto de uma mulher branca com olhos verdes e cabelos longos preto"
             />
           </div>
@@ -88,13 +88,13 @@ function Time() {
           <p className="texto-card">
             <a
               target="_blank"
-              href="https://uiverse.io/gagan-gv/afraid-otter-91"
+              href="https://github.com/TatianeAlvesO"
             >
               <GitHubIcon />
             </a>
             <a
               target="_blank"
-              href="https://uiverse.io/gagan-gv/afraid-otter-91"
+              href="https://www.linkedin.com/in/tatiane-alves-de-oliveira-5ab406180/"
             >
               <LinkedInIcon />
             </a>
@@ -106,8 +106,8 @@ function Time() {
         <div className="card-time">
           <div className="img-time">
             <img
-              src="https://i.imgur.com/ihhDc1E.jpg"
-              alt="Foto de uma mulher branca com olhos verdes e cabelos longos preto"
+              src="https://i.imgur.com/juzioT3.jpg"
+              alt="Foto de uma mulher branca com olhos castanhos e cabelos medio liso preto"
             />
           </div>
           <span className="heading">Victória Mello </span>
@@ -115,13 +115,13 @@ function Time() {
           <p className="texto-card">
             <a
               target="_blank"
-              href="https://uiverse.io/gagan-gv/afraid-otter-91"
+              href="https://github.com/victoriamelo09"
             >
               <GitHubIcon />
             </a>
             <a
               target="_blank"
-              href="https://uiverse.io/gagan-gv/afraid-otter-91"
+              href="https://www.linkedin.com/in/victória-melo-a143b9171/"
             >
               <LinkedInIcon />
             </a>
@@ -140,13 +140,13 @@ function Time() {
           <p className="texto-card">
             <a
               target="_blank"
-              href="https://uiverse.io/gagan-gv/afraid-otter-91"
+              href="https://github.com/adigramont"
             >
               <GitHubIcon />
             </a>
             <a
               target="_blank"
-              href="https://uiverse.io/gagan-gv/afraid-otter-91"
+              href="https://www.linkedin.com/in/hellen-digramont-eilert-69a41685/"
             >
               <LinkedInIcon />
             </a>
@@ -156,8 +156,8 @@ function Time() {
         <div className="card-time">
           <div className="img-time">
             <img
-              src="https://i.imgur.com/ihhDc1E.jpg"
-              alt="Foto de uma mulher branca com olhos verdes e cabelos longos preto"
+              src="https://i.imgur.com/PIbuM7v.jpg"
+              alt="Foto de uma mulher branca com olhos castanho e cabelos liso longos loiros"
             />
           </div>
           <span className="heading">Isabela Soares</span>
@@ -165,13 +165,13 @@ function Time() {
           <p className="texto-card">
             <a
               target="_blank"
-              href="https://uiverse.io/gagan-gv/afraid-otter-91"
+              href="https://github.com/belaxsantos"
             >
               <GitHubIcon />
             </a>
             <a
               target="_blank"
-              href="https://uiverse.io/gagan-gv/afraid-otter-91"
+              href="https://www.linkedin.com/in/isabela-soares-4b148822b/"
             >
               <LinkedInIcon />
             </a>
