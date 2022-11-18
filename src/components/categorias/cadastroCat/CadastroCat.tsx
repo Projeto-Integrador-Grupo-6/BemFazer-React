@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
 import imgOng from '../../../assets/img1-ong.png'
-import imgBannerOng from '../../../assets/10.jpg'
+import imgBannerOng from '../../../assets/11.jpg'
 
 
 

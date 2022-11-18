@@ -1,7 +1,7 @@
 import React, { useState, useEffect, ChangeEvent } from "react";
 import { Grid, Typography, TextField, Button, Select } from "@material-ui/core";
 import { Link, useNavigate } from "react-router-dom";
-import { Box, FormControl, MenuItem } from "@mui/material";
+import { Box, FormControl, InputLabel, MenuItem } from "@mui/material";
 import { cadastroUsuario } from "../../services/Service";
 import User from "../../models/User";
 import "./CadastroUsuario.css";
@@ -184,13 +184,13 @@ function CadastroUsuario() {
             {/*<TextField value={user.tipoUser} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} id="tipoUser" label="Tipo Usuário" variant="outlined" name="tipoUser" margin="normal" fullWidth />*/}
 
             <FormControl fullWidth className="btn-tipo">
+              <InputLabel id="demo-simple-select-helper-label"> Escolha o tipo de usuário: </InputLabel>
               <Select
                 labelId="demo-simple-select-helper-label"
                 id="demo-simple-select-helper"
                 value={user.tipoUser}
                 onChange={selectTipo}
               >
-                <MenuItem value=""> Escolha o tipo de usuário: </MenuItem>
                 <MenuItem value="ong">ONG</MenuItem>
                 <MenuItem value="voluntario">Voluntário</MenuItem>
               </Select>
@@ -207,15 +207,6 @@ function CadastroUsuario() {
                 cadastrar
               </Button>
               
-
-              <Box display="flex" alignItems="center" justifyContent="center">
-                <Typography align="center">Já tem uma conta?</Typography>
-              </Box>
-              <Link to="/login" className="btn-ent">
-                <Typography variant="subtitle1" gutterBottom align="center">
-                  Entre aqui ➜
-                </Typography>
-              </Link>
             </Box>
           </form>
         </Box>

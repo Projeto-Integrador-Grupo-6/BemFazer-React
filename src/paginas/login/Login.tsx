@@ -6,7 +6,7 @@ import { login } from "../../services/Service";
 import UserLogin from "../../models/UserLogin";
 import './Login.css';
 import { useDispatch } from 'react-redux';
-import { addToken } from '../../store/tokens/actions';
+import { addId, addToken, addUser } from '../../store/tokens/actions';
 import { toast } from 'react-toastify';
 
 function Login() {
@@ -22,9 +22,20 @@ function Login() {
       usuario: '',
       foto: '',
       senha: '',
-      token: ''
+      token: '',
+      tipoUser: ''
     }
   )
+
+  const [respUserLogin, setRespUserLogin] = useState<UserLogin>({
+    id: 0,
+    nome: "",
+    usuario: "",
+    foto: "",
+    senha: "",
+    token: "",
+    tipoUser: ''
+  });
 
   function updatedModel(e: ChangeEvent<HTMLInputElement>) {
     setUserLogin({
@@ -40,10 +51,19 @@ function Login() {
     }
   }, [token]);
 
+  useEffect(() => {
+    if (respUserLogin.token != '') {
+      dispatch(addToken(respUserLogin.token));
+      dispatch(addId(respUserLogin.id.toString()));
+      dispatch(addUser(respUserLogin.tipoUser));
+      history('/home');
+    }
+  }, [respUserLogin.token]);
+
   async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
     e.preventDefault();
     try {
-      await login(`/usuarios/logar`, userLogin, setToken)
+      await login(`/usuarios/logar`, userLogin, setRespUserLogin)
 
       toast.success("Usuário logado com sucesso!", {
         position: "top-right",
