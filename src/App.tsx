@@ -18,6 +18,7 @@ import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import DeletarServico from './components/servicos/deleteServico/DeleteServico';
 import Time from './paginas/time/Time';
+import PaginaInicial from './paginas/paginaInicial/PaginaInicial';
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
       <Navbar />
       <div style={{ minHeight: "100vh" }}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<PaginaInicial />} />
           <Route path="/login" element={<Login />} />
           <Route path="/home" element={<Home />} />
           <Route path="/cadastrousuario" element={<CadastroUsuario />} />

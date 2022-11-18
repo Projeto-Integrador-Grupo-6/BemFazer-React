@@ -14,7 +14,6 @@
     border: 0.5px solid #E55C51 !important;
     color: #E55C51 !important;
     font-weight: bold !important;
-    transform: translateX(250%);
     box-shadow: none !important;
 }
 
@@ -22,12 +21,12 @@
     font-weight: bold;
     background-color: #E55C51 !important;
     color: white !important;
+    opacity: 1 !important;
 }
 
 .marginLeft1 {
     background-color: #E55C51 !important;
     box-shadow: none !important;
-    transform: translateX(32em);
     color: #fff !important;
 }
 

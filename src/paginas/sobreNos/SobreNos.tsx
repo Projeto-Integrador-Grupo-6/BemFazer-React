@@ -99,35 +99,7 @@ export default function SobreNos() {
       <CardMedia
         component="img"
         height="140"
-        image="https://imgur.com/j3GDnIq.jpg"
-        alt="Plan International"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Plan International
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Uma organização humanitária, não governamental e sem fins lucrativos,
-          que promove os direitos das crianças e a igualdade para as meninas.
-          Acreditamos no poder e potencial de todas as crianças.
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Saiba Mais</Button>
-      </CardActions>
-    </Card>,
-
-    <Card
-      sx={{
-        maxWidth: 245,
-        minHeight: 320,
-      }}
-      className="space"
-    >
-      <CardMedia
-        component="img"
-        height="140"
-        image="https://imgur.com/TNt0anF.jpg"
+        image="https://imgur.com/f1Nbfp4.jpg"
         alt="Juntos somos mais"
       />
       <CardContent>
@@ -156,7 +128,7 @@ export default function SobreNos() {
       <CardMedia
         component="img"
         height="140"
-        image="https://imgur.com/dRmmToI.jpg"
+        image="https://imgur.com/tQ9bqNN.jpg"
         alt="Um coração"
       />
       <CardContent>
@@ -171,21 +143,50 @@ export default function SobreNos() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small"  >Saiba Mais</Button>
+        <Button size="small">Saiba Mais</Button>
       </CardActions>
     </Card>,
+
+    <Card
+      sx={{
+        maxWidth: 245,
+        minHeight: 320,
+      }}
+      className="space"
+    >
+      <CardMedia
+        component="img"
+        height="140"
+        image="https://imgur.com/j3GDnIq.jpg"
+        alt="Plan International"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Plan International
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Uma organização humanitária, não governamental e sem fins lucrativos,
+          que promove os direitos das crianças e a igualdade para as meninas.
+          Acreditamos no poder e potencial de todas as crianças.
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Saiba Mais</Button>
+      </CardActions>
+    </Card>
   ];
 
   return (
     <div>
       <div className="about">
         <Stack direction="row" spacing={2}>
-          <img
-            src="https://i0.wp.com/www.sabra.org.br/site/wp-content/uploads/2021/06/os-pilares-para-o-desenvolvimento-de-comunidades-sustentaveis-20210423165408.jpg.jpg?fit=800%2C534&ssl=1"
-            alt=""
-            className="img"
-          />
+          <img src="https://imgur.com/tYZRM4G.png" alt="" className="img" />
+          <img src="https://imgur.com/FaIf3Wl.png" alt="" className="img2" />
+
           <div className="about-bg">
+            <h2 className="title-text">
+              nossa história
+            </h2>
             <p className="about-text">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sete mulheres se
               juntaram com um sonho de poder inovar e ajudar as pessoas. Com
@@ -223,6 +224,9 @@ export default function SobreNos() {
             responsive={responsive}
             controlsStrategy="alternate"
             infinite
+            // autoPlay
+            // animationDuration={4000}
+            // autoPlayInterval={1000}
           />
         </Box>
       </div>
@@ -332,7 +336,7 @@ export default function SobreNos() {
       <div>
         <Link to="/categorias" className="text-decorator-none">
           <button className="button-sn">
-            <span >Saiba Mais</span>
+            <span>Saiba Mais</span>
             <svg
               width="34"
               height="34"

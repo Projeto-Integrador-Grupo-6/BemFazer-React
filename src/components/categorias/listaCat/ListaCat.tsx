@@ -77,7 +77,23 @@ function ListaCat() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Box display="flex" justifyContent="center" mb={1.5}>
+              <Box display="flex" justifyContent="flex-end" mb={1.5}>
+              <Link
+                  to={`/deletarCategoria/${categoria.id}`}
+                  className="text-decorator-none"
+                >
+                  <Box mx={1}>
+                    <Button
+                      variant="contained"
+                      size="small"
+                      color="secondary"
+                      className="button-del"
+                    >
+                      deletar
+                    </Button>
+                  </Box>
+                </Link>
+                
                 <Link
                   to={`/formularioCategoria/${categoria.id}`}
                   className="text-decorator-none"
@@ -93,21 +109,7 @@ function ListaCat() {
                     </Button>
                   </Box>
                 </Link>
-                <Link
-                  to={`/deletarCategoria/${categoria.id}`}
-                  className="text-decorator-none"
-                >
-                  <Box mx={1}>
-                    <Button
-                      variant="contained"
-                      size="small"
-                      color="secondary"
-                      className="button-del"
-                    >
-                      deletar
-                    </Button>
-                  </Box>
-                </Link>
+                
               </Box>
             </CardActions>
           </Card>

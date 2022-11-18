@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "https://projeot-bem-fazer.onrender.com",
+  baseURL: "https://projeto-bem-fazer.onrender.com/",
 });
 
 export const cadastroUsuario = async (url: any, dados: any, setDados: any) => {
@@ -11,7 +11,7 @@ export const cadastroUsuario = async (url: any, dados: any, setDados: any) => {
 
 export const login = async (url: any, dados: any, setDados: any) => {
   const resposta = await api.post(url, dados);
-  setDados(resposta.data.token);
+  setDados(resposta.data);
 };
 
 export const busca = async (url: any, setDado: any, header: any) => {

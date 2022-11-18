@@ -5,9 +5,13 @@
     gap: 30px;
     width: 80%;
     padding: 5px;
-    padding-left: 55px;
+    padding-left: 5px;
     position: relative;
     margin-bottom: 15px;
+}
+
+.alice-carousel__wrapper {
+    height: 53vh !important;
 }
 
 .card button {
@@ -29,19 +33,22 @@
 
 .about {
     transform: translateY(8%);
+    margin-top: 0;
+}
+
+.title-text {
 }
 
 .about-text {
-    transform: translateY(10%);
     text-align: justify;
     margin-bottom: 50px;
-    padding-left: 15px;
-    color: rgb(255, 255, 255);
+    margin-left: 0;
+    color: #000;
     font-weight: bold;
 }
 
 .about-bg {
-    background-color: #E55C51;
+    background-color: #fff;
     margin: 0 !important;
     height: 80%;
     width: 220em;
@@ -63,8 +70,15 @@
     border-radius: 20px;
 }
 
+.img2 {
+    width: 10em;
+    height: 8em;
+    border-radius: 20px;
+    transform: translate(-50%, 150%);
+}
+
 .card::before {
-    background-image: url('https://images.unsplash.com/photo-1624928133086-0bb838a85f44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+    /* background-image: url('https://images.unsplash.com/photo-1624928133086-0bb838a85f44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'); */
     opacity: 0.6;
     width: 100%;
     height: 100%;

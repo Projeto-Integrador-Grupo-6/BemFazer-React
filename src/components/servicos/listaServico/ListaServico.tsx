@@ -90,7 +90,8 @@ function ListaServico() {
             {tipoUser === 'ong' ? (
                <CardActions>
                <Box display="flex" justifyContent="center" mb={1.5}>
-                 <Link
+
+               <Link
                    to={`/deletarServico/${servico.id}`}
                    className="text-decorator-none"
                  >
@@ -106,7 +107,7 @@ function ListaServico() {
                    </Box>
                  </Link>
 
-                 <Link
+               <Link
                    to={`/formularioServico/${servico.id}`}
                    className="text-decorator-none"
                  >
@@ -121,6 +122,10 @@ function ListaServico() {
                      </Button>
                    </Box>
                  </Link>
+                 
+                 
+
+                 
                </Box>
              </CardActions>
             ) : (
