@@ -201,9 +201,9 @@ export default function SobreNos() {
               estrutura.
               <br />
               <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Então nasce o Bem
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Então nasce a Bem
               Fazer, dando vida estrutural para facilitar a conexão de pessoas e
-              ONG's. A ideia do Bem Fazer é fazer fluir a comunicação entre
+              ONG's. A ideia da Bem Fazer é fazer fluir a comunicação entre
               voluntários e fomentar o terceiro setor.
             </p>
           </div>
@@ -330,9 +330,9 @@ export default function SobreNos() {
       </div>
 
       <div>
-        <Link to="/cadastrousuario">
+        <Link to="/categorias" className="text-decorator-none">
           <button className="button-sn">
-            <span className="text-decorator-none1">Saiba Mais</span>
+            <span >Saiba Mais</span>
             <svg
               width="34"
               height="34"
