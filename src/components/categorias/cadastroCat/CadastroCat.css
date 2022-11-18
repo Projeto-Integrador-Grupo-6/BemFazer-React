@@ -5,7 +5,7 @@
 .container__ong {
   display: flex;
   flex-direction: column;
-  width: 99vw;
+  width: 100  vw;
   height: 100vh;
   position: relative;
 }

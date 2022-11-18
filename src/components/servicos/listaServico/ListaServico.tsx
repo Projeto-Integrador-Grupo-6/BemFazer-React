@@ -90,6 +90,22 @@ function ListaServico() {
             {tipoUser === 'ong' ? (
                <CardActions>
                <Box display="flex" justifyContent="center" mb={1.5}>
+               <Link
+                   to={`/formularioServico/${servico.id}`}
+                   className="text-decorator-none"
+                 >
+                   <Box mx={1}>
+                     <Button
+                       variant="contained"
+                       size="small"
+                       color="primary"
+                       className="btn-att"
+                     >
+                       atualizar
+                     </Button>
+                   </Box>
+                 </Link>
+                 
                  <Link
                    to={`/deletarServico/${servico.id}`}
                    className="text-decorator-none"
@@ -106,21 +122,7 @@ function ListaServico() {
                    </Box>
                  </Link>
 
-                 <Link
-                   to={`/formularioServico/${servico.id}`}
-                   className="text-decorator-none"
-                 >
-                   <Box mx={1}>
-                     <Button
-                       variant="contained"
-                       size="small"
-                       color="primary"
-                       className="btn-att"
-                     >
-                       atualizar
-                     </Button>
-                   </Box>
-                 </Link>
+                 
                </Box>
              </CardActions>
             ) : (
