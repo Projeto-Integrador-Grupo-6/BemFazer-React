@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #FEFBE8 !important;
+  background-color: #fff !important;
   color: #000;
   display: flex;
   justify-content: space-between;
@@ -12,8 +12,14 @@
 
 .navbar2 {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start ;
   width: 60%;
+  margin-left: 30px;
+  gap: 50px;
+}
+
+.MuiTypography-h6 {
+  font-family: 'Lexend', sans-serif !important;
 }
 
 .navbar1 {

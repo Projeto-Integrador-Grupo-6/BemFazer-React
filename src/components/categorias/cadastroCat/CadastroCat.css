@@ -78,6 +78,11 @@ h3 {
   display: inline-flex;
 }
 
+.btn-final-ong:hover {
+  background-color: #e55b51 !important;
+  opacity: 1;
+}
+
 #tipo {
   width: 100% !important;
 }
