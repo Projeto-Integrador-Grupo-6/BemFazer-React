@@ -57,6 +57,17 @@ function ListaServico() {
 
   return (
     <>
+        {servicos.length === 0 &&   <div id="js-preloader" className="js-preloader">
+      <div className="preloader-inner">
+          <span className="dot"></span>
+          <div className="dots">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+      </div>
+  </div>}
+
       <div className="box-servico">
         {servicos.map((servico) => (
           <Box m={2}>

@@ -34,3 +34,11 @@
     font-weight: bold !important;
     margin-bottom: 10px !important;
 }
+
+.btn-cancelar {
+    background-color: #E55C51 !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    margin-bottom: 10px !important;
+    margin-right: 30px !important;
+}

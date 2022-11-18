@@ -197,9 +197,16 @@ function CadastroUsuario() {
             </FormControl>
 
             <Box marginTop={2} textAlign="center">
+
+              <Link to='/login' className="text-decorator-none">
+              <Button type="submit" variant="contained" className="btn-cancelar">
+                cancelar
+              </Button>
+              </Link>
               <Button type="submit" variant="contained" className="btn-cadastrar">
                 cadastrar
               </Button>
+              
 
               <Box display="flex" alignItems="center" justifyContent="center">
                 <Typography align="center">Já tem uma conta?</Typography>
