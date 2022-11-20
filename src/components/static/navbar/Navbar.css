@@ -18,6 +18,10 @@
   gap: 50px;
 }
 
+.shop {
+  margin-left: 240px;
+}
+
 .MuiTypography-h6 {
   font-family: 'Lexend', sans-serif !important;
 }
