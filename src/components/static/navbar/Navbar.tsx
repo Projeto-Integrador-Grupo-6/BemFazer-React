@@ -107,6 +107,10 @@ function Navbar() {
           </Link>
         </Box>
 
+        <Box className="shop">
+          <img src="https://imgur.com/vh4pRv2.png" alt="Icone - sacola de compra" />
+        </Box>
+
         <Box sx={{ flexGrow: 0 }} className="login">
           <Tooltip title="Open settings">
             <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
