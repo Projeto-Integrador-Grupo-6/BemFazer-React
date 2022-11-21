@@ -36,10 +36,10 @@ Loader Style
 --------------------------------------------- 
 */
 
-.js-preloader {
+.js-preloader2 {
     /* You must change postion:relative; for position:fixed;  */
     position: relative;
-    top: 0px;
+    top: 150px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -56,7 +56,7 @@ Loader Style
     transition: opacity 0.25s ease;
   }
   
-  .js-preloader.loaded {
+  .js-preloader2.loaded {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -76,14 +76,14 @@ Loader Style
     }
   }
   
-  .preloader-inner {
+  .preloader-inner2 {
     position: relative;
     width: 142px;
     height: 40px;
     background: transparent;
   }
   
-  .preloader-inner .dot {
+  .preloader-inner2 .dot {
     position: absolute;
     width: 16px;
     height: 16px;
@@ -97,7 +97,7 @@ Loader Style
     animation: dot8567 2.8s infinite;
   }
   
-  .preloader-inner .dots {
+  .preloader-inner2 .dots2 {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     margin-top: 12px;
@@ -106,7 +106,7 @@ Loader Style
     animation: dots723423 2.8s infinite;
   }
   
-  .preloader-inner .dots span {
+  .preloader-inner2 .dots2 span {
     display: block;
     float: left;
     width: 16px;

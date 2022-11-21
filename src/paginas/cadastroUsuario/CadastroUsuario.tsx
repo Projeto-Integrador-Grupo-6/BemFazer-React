@@ -106,6 +106,9 @@ function CadastroUsuario() {
 
       <Grid item xs={6} alignItems="center">
         <Box paddingX={10}>
+          <div className="logo-login2">
+            <img src="https://imgur.com/8jjQm8b.png" alt="" />
+          </div>
           <form onSubmit={onSubmit}>
             <Typography
               variant="h4"
@@ -184,7 +187,10 @@ function CadastroUsuario() {
             {/*<TextField value={user.tipoUser} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} id="tipoUser" label="Tipo Usuário" variant="outlined" name="tipoUser" margin="normal" fullWidth />*/}
 
             <FormControl fullWidth className="btn-tipo">
-              <InputLabel id="demo-simple-select-helper-label"> Escolha o tipo de usuário: </InputLabel>
+              <InputLabel id="demo-simple-select-helper-label">
+                {" "}
+                Escolha o tipo de usuário:{" "}
+              </InputLabel>
               <Select
                 labelId="demo-simple-select-helper-label"
                 id="demo-simple-select-helper"
@@ -197,22 +203,24 @@ function CadastroUsuario() {
             </FormControl>
 
             <Box marginTop={2} textAlign="center">
-
-              <Link to='/login' className="text-decorator-none">
-              <Button type="submit" variant="contained" className="btn-cancelar">
-                cancelar
-              </Button>
+              <Link to="/login" className="text-decorator-none">
+                <Button
+                  type="submit"
+                  variant="contained"
+                  className="btn-cancelar"
+                >
+                  cancelar
+                </Button>
               </Link>
-              <Button type="submit" variant="contained" className="btn-cadastrar">
+              <Button
+                type="submit"
+                variant="contained"
+                className="btn-cadastrar"
+              >
                 cadastrar
               </Button>
-              
             </Box>
           </form>
-
-          <div className="logo-login2">
-            <img src="https://imgur.com/8jjQm8b.png" alt="" />
-          </div>
         </Box>
       </Grid>
     </Grid>

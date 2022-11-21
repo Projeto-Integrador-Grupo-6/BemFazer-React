@@ -20,12 +20,14 @@ function Time() {
           <span className="heading">Jihye Koo</span>
           <p className="cargo">Desenvolvedora FullStack</p>
           <p className="texto-card">
-            <a target="_blank" href="https://github.com/jihye83">
-              <GitHubIcon />
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/jihye-koo/">
-              <LinkedInIcon />
-            </a>
+            <div >
+              <a target="_blank" href="https://github.com/jihye83">
+                <GitHubIcon className="social-icon"/>
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/jihye-koo/">
+                <LinkedInIcon className="social-icon"/>
+              </a>
+            </div>
           </p>
         </div>
 
@@ -39,15 +41,17 @@ function Time() {
           <span className="heading">Scarlet Martins</span>
           <p className="cargo">Desenvolvedora FullStack</p>
           <p className="texto-card">
-            <a target="_blank" href="https://github.com/ScarletMartins">
-              <GitHubIcon />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/scarletmartins/"
-            >
-              <LinkedInIcon />
-            </a>
+            <div>
+              <a target="_blank" href="https://github.com/ScarletMartins">
+                <GitHubIcon className="social-icon"/>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/scarletmartins/"
+              >
+                <LinkedInIcon className="social-icon"/>
+              </a>
+            </div>
           </p>
         </div>
 
@@ -61,18 +65,14 @@ function Time() {
           <span className="heading">Nina Choi</span>
           <p className="cargo">Desenvolvedora FullStack</p>
           <p className="texto-card">
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/choinina/"
-            >
-              <GitHubIcon />
-            </a>
-            <a
-              target="_blank"
-              href="https://github.com/techchoi"
-            >
-              <LinkedInIcon />
-            </a>
+            <div>
+              <a target="_blank" href="https://www.linkedin.com/in/choinina/">
+                <GitHubIcon className="social-icon"/>
+              </a>
+              <a target="_blank" href="https://github.com/techchoi">
+                <LinkedInIcon className="social-icon"/>
+              </a>
+            </div>
           </p>
         </div>
 
@@ -86,18 +86,17 @@ function Time() {
           <span className="heading">Tatiane Alves</span>
           <p className="cargo">Desenvolvedora FullStack</p>
           <p className="texto-card">
-            <a
-              target="_blank"
-              href="https://github.com/TatianeAlvesO"
-            >
-              <GitHubIcon />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/tatiane-alves-de-oliveira-5ab406180/"
-            >
-              <LinkedInIcon />
-            </a>
+            <div>
+              <a target="_blank" href="https://github.com/TatianeAlvesO">
+                <GitHubIcon className="social-icon"/>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/tatiane-alves-de-oliveira-5ab406180/"
+              >
+                <LinkedInIcon className="social-icon"/>
+              </a>
+            </div>
           </p>
         </div>
       </Box>
@@ -113,18 +112,17 @@ function Time() {
           <span className="heading">Victória Mello </span>
           <p className="cargo">Desenvolvedora FullStack</p>
           <p className="texto-card">
-            <a
-              target="_blank"
-              href="https://github.com/victoriamelo09"
-            >
-              <GitHubIcon />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/victória-melo-a143b9171/"
-            >
-              <LinkedInIcon />
-            </a>
+            <div>
+              <a target="_blank" href="https://github.com/victoriamelo09">
+                <GitHubIcon className="social-icon"/>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/victória-melo-a143b9171/"
+              >
+                <LinkedInIcon className="social-icon"/>
+              </a>
+            </div>
           </p>
         </div>
 
@@ -138,18 +136,17 @@ function Time() {
           <span className="heading">Hellen Digramont</span>
           <p className="cargo">Desenvolvedora FullStack</p>
           <p className="texto-card">
-            <a
-              target="_blank"
-              href="https://github.com/adigramont"
-            >
-              <GitHubIcon />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/hellen-digramont-eilert-69a41685/"
-            >
-              <LinkedInIcon />
-            </a>
+            <div>
+              <a target="_blank" href="https://github.com/adigramont">
+                <GitHubIcon className="social-icon"/>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/hellen-digramont-eilert-69a41685/"
+              >
+                <LinkedInIcon className="social-icon"/>
+              </a>
+            </div>
           </p>
         </div>
 
@@ -163,18 +160,17 @@ function Time() {
           <span className="heading">Isabela Soares</span>
           <p className="cargo">Desenvolvedora FullStack</p>
           <p className="texto-card">
-            <a
-              target="_blank"
-              href="https://github.com/belaxsantos"
-            >
-              <GitHubIcon />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/isabela-soares-4b148822b/"
-            >
-              <LinkedInIcon />
-            </a>
+            <div>
+              <a target="_blank" href="https://github.com/belaxsantos">
+                <GitHubIcon className="social-icon"/>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/isabela-soares-4b148822b/"
+              >
+                <LinkedInIcon className="social-icon"/>
+              </a>
+            </div>
           </p>
         </div>
       </Box>

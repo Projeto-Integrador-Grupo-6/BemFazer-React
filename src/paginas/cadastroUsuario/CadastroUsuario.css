@@ -57,5 +57,6 @@
 .logo-login2 img{
     max-width: 250px;
     max-height: 2150px;
-    transform: translate(60%, -1300%);
+    display: block;
+    margin: 0 auto 5rem;
 }

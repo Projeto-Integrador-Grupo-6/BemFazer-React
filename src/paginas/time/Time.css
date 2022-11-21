@@ -31,7 +31,6 @@
   font-family: inherit;
   z-index: 1;
   margin-right: 30px;
-  /* background-color: #E55C51; */
 }
 
 .img-time {
@@ -57,22 +56,20 @@
 .icon {
   color: black;
 }
-.css-i4bv87-MuiSvgIcon-root {
+
+.social-icon {
   font-size: 50px !important;
 }
-.css-i4bv87-MuiSvgIcon-root:hover{
+.social-icon:hover{
   font-size: 70px !important;
   color: #E55C51 !important;
 }
 
 .texto-card {
-  /* opacity: 0;
-  transition: all 0.5s; */
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  /* font-size: 30px; */
 }
 
 .texto-card a {
