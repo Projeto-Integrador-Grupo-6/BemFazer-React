@@ -1,65 +1,125 @@
-.bk-paginicial img {
-    min-width: 100%;
-    min-height: 100%;
+.div-paginicial {
+    min-width: 100vh;
+    min-height: 100vh;
+    background: url('https://imgur.com/kxdpTDp.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: left;
 }
 
-.div-paginicial {
-    /* display: flex; */
+.div-segundapag {
+    min-width: 100vh;
+    min-height: 100vh;
+    background: url('https://imgur.com/G1XEQgq.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.div-segundapag p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-top: 0;
+    transform: translate(0%, 750%);
+    padding-left: 5%;
+    margin-left: 0;
+}
+
+.logo-ong {
+    max-width: 3em;
+    transform: translate(150%, 440%);
+}
+
+.logo-pf {
+    max-width: 3em;
+    transform: translate(150%, 440%);
+}
+
+.img-home {
+    width: 520px;
+    margin-bottom: 0;
+    transform: translate(-9%,15%);
+}
+
+.div-home h2 {
+    margin-left: 150px;
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62px;
+    transform: translate(-10%, -180%);
+}
+
+.div-home p {
+    transform: translate(10%, -700%);
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 .texto-paginicial {
     transform: translate(50%, -2000%);
 }
 
+.div-terceirapag {
+    background: url('https://imgur.com/pIUOEnE.png');
+    min-width: 100vh;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.div-terceirapag img {
+    max-width: 6em;
+    display: block;
+    margin-bottom: 5em;
+    margin-left: 70em;
+    padding-top: 5em;
+}
+
+.p-icone{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding-left: 71.2em;
+    transform: translateY(-180%);
+    margin-bottom: 0;
+}
+
+.p-texto{
+    margin-bottom: 0;
+    padding-left: 2em;
+    transform: translateX(-500%);
+    padding-top: 5em;
+}
+
 /* CSS BOTAO */
 
-.cta {
-    border: none;
-    background: none;
-    margin-left: 1100px;
-  }
-  
-  .cta span {
-    padding-bottom: 7px;
-    letter-spacing: 4px;
-    font-size: 24px;
-    padding-right: 15px;
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
     text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-left: 300px;
   }
   
-  .cta svg {
-    transform: translateX(-8px);
-    transition: all 0.3s ease;
+  button:hover {
+    background-color: #e55b51;
+    box-shadow: 0px 15px 20px #976a67;
+    color: #fff;
+    transform: translateY(-7px);
   }
   
-  .cta:hover svg {
-    transform: translateX(0);
-  }
-  
-  .cta:active svg {
-    transform: scale(0.9);
-  }
-  
-  .hover-underline-animation {
-    position: relative;
-    color: black;
-    padding-bottom: 20px;
-  }
-  
-  .hover-underline-animation:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000000;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .cta:hover .hover-underline-animation:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  button:active {
+    transform: translateY(-1px);
   }
