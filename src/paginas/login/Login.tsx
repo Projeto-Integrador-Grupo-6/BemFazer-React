@@ -8,6 +8,7 @@ import "./Login.css";
 import { useDispatch } from "react-redux";
 import { addId, addToken, addUser } from "../../store/tokens/actions";
 import { toast } from "react-toastify";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import GitHub from "@mui/icons-material/GitHub";
@@ -90,9 +91,17 @@ function Login() {
   }
 
   return (
+  
     <Grid container direction="row" justifyContent="center" alignItems="center">
       <Grid alignItems="center" xs={6}>
+      <Link to='/'>
+      <ArrowBackIcon className="arrow"/>
+      </Link>
         <Box paddingX={20}>
+          <div className="logo-login">
+            <img src="https://imgur.com/8jjQm8b.png" alt="" />
+          </div>
+
           <form onSubmit={onSubmit}>
             <Typography
               variant="h4"
@@ -148,24 +157,23 @@ function Login() {
               </Typography>
             </Link>
           </Box>
-
-          <div className="logo-login">
-            <img src="https://imgur.com/8jjQm8b.png" alt="" />
-          </div>
         </Box>
 
         <Box display="flex" alignItems="center" justifyContent="center">
-          <a
-            href="https://github.com/Projeto-Integrador-Grupo-6"
-            target="_blank"
-            className="text-decorator-none"
-          >
-            <GitHub />
-          </a>
-        </Box>
-        
+                <a
+                  href="https://github.com/Projeto-Integrador-Grupo-6"
+                  target="_blank"
+                  className="text-decorator-none"
+                >
+                  <GitHubIcon className="redes" />
+                </a>
+              </Box>
       </Grid>
+
+      
+
       <Grid xs={6} className="imagem"></Grid>
+      
     </Grid>
   );
 }

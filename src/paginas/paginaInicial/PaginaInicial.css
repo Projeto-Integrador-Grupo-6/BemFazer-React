@@ -1,5 +1,5 @@
 .div-paginicial {
-    min-width: 100vh;
+    min-width: 100vw;
     min-height: 100vh;
     background: url('https://imgur.com/kxdpTDp.png');
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@
 }
 
 .div-segundapag {
-    min-width: 100vh;
+    min-width: 100vw;
     min-height: 100vh;
     background: url('https://imgur.com/G1XEQgq.png');
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@
 .img-home {
     width: 520px;
     margin-bottom: 0;
-    transform: translate(-9%,15%);
+    
 }
 
 .div-home h2 {
@@ -62,22 +62,22 @@
     transform: translate(50%, -2000%);
 }
 
-.div-terceirapag {
+.icon-terceirapag {
     background: url('https://imgur.com/pIUOEnE.png');
     min-width: 100vh;
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
 }
 
-.div-terceirapag img {
+.icon-terceirapag img {
     max-width: 6em;
-    display: block;
+    display: flex;
     margin-bottom: 5em;
     margin-left: 70em;
     padding-top: 5em;
 }
+
 
 .p-icone{
     font-family: 'Montserrat', sans-serif;
@@ -87,12 +87,49 @@
     margin-bottom: 0;
 }
 
+.p-icone img {
+    width: 4em;
+    transform: translateX(180%);
+}
+
 .p-texto{
     margin-bottom: 0;
     padding-left: 2em;
     transform: translateX(-500%);
     padding-top: 5em;
 }
+
+.div-terceirapag {
+    background: url('https://imgur.com/pNPSQqT.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+.div-terceirapag h3 {
+    font-weight: 700;
+    position: absolute;
+    padding: 2em 10em 0 10em;
+    transform: translateY(95%);
+    font-size: 1.5em;
+}
+
+.dinheiro {
+    transform: translate(-350%, 900%);
+}
+
+
+.tempo {
+    transform: translate(-188%, 790%);
+}
+
+.material {
+    transform: translate(-30%, 547%);
+}
+
 
 /* CSS BOTAO */
 
@@ -111,6 +148,8 @@ button {
     cursor: pointer;
     outline: none;
     margin-left: 300px;
+    position: relative;
+    z-index: 999;
   }
   
   button:hover {
