@@ -193,9 +193,9 @@ export default function SobreNos() {
             responsive={responsive}
             controlsStrategy="alternate"
             infinite
-            autoPlay
-            animationDuration={4000}
-            autoPlayInterval={1000}
+            // autoPlay
+            // animationDuration={4000}
+            // autoPlayInterval={1000}
           />
         </Box>
       </div>

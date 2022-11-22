@@ -20,20 +20,27 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 1.5em;
-    margin-top: 0;
-    transform: translate(0%, 750%);
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    /* transform: translate(0%, 750%); */
     padding-left: 5%;
     margin-left: 0;
 }
 
 .logo-ong {
     max-width: 3em;
-    transform: translate(150%, 440%);
+    margin-left: 5em;
+    margin-top: 13em;
+    margin-bottom: 0;
+    /* transform: translate(150%, 440%); */
 }
 
 .logo-pf {
     max-width: 3em;
-    transform: translate(150%, 440%);
+    margin-left: 5em;
+    margin-top: 8em;
+    margin-bottom: 0;
+    /* transform: translate(150%, 440%); */
 }
 
 .img-home {
