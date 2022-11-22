@@ -22,7 +22,6 @@
     font-size: 1.5em;
     margin-top: 0.5em;
     margin-bottom: 0;
-    /* transform: translate(0%, 750%); */
     padding-left: 5%;
     margin-left: 0;
 }
@@ -32,7 +31,6 @@
     margin-left: 5em;
     margin-top: 13em;
     margin-bottom: 0;
-    /* transform: translate(150%, 440%); */
 }
 
 .logo-pf {
@@ -40,7 +38,6 @@
     margin-left: 5em;
     margin-top: 8em;
     margin-bottom: 0;
-    /* transform: translate(150%, 440%); */
 }
 
 .img-home {
@@ -89,8 +86,10 @@
 .p-icone{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    padding-left: 71.2em;
-    transform: translateY(-180%);
+    display: flex;
+    gap: 4rem;
+    width: 70vw;
+    margin: 0 auto;
     margin-bottom: 0;
 }
 
@@ -114,27 +113,29 @@
     font-family: 'Montserrat', sans-serif;
     min-width: 100vh;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
 }
 
 .div-terceirapag h3 {
     font-weight: 700;
-    position: absolute;
     padding: 2em 10em 0 10em;
-    transform: translateY(95%);
     font-size: 1.5em;
 }
 
 .dinheiro {
-    transform: translate(-350%, 900%);
+    width: 33%;
 }
 
 
 .tempo {
-    transform: translate(-188%, 790%);
+    width: 33%;
 }
 
 .material {
-    transform: translate(-30%, 547%);
+    width: 33%;
 }
 
 
@@ -156,7 +157,6 @@ button {
     outline: none;
     margin-left: 300px;
     position: relative;
-    z-index: 999;
   }
   
   button:hover {
