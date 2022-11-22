@@ -144,7 +144,7 @@ function CadastroCat() {
         </div>
         <img src={imgOng} alt='' className='ong__position' />
         <div className='block__right'>
-          <img src={imgBannerOng} alt="" />
+          <img src={imgBannerOng} alt="imagem de crianças sorrindo" />
         </div>
       </div>
     </div>

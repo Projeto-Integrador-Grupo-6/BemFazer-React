@@ -41,22 +41,21 @@
 }
 
 .img-home {
-    width: 520px;
+    width: 32rem;
     margin-bottom: 0;
-    
 }
 
 .div-home h2 {
-    margin-left: 150px;
+    margin-left: 10rem;
     margin-top: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 62px;
+    font-size: 4em;
     transform: translate(-10%, -180%);
 }
 
 .div-home p {
     transform: translate(10%, -700%);
-    font-size: 25px;
+    font-size: 1.5em;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
 }
