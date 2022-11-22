@@ -14,13 +14,13 @@
   display: flex;
   justify-content: flex-start ;
   width: 60%;
-  margin-left: 30px;
-  gap: 50px;
+  margin-left: 15rem;
+  gap: 8rem;
 }
 
-.shop {
+/* .shop {
   margin-left: 240px;
-}
+} */
 
 .MuiTypography-h6 {
   font-family: 'Lexend', sans-serif !important;
@@ -47,15 +47,3 @@
   gap: 15px;
 }
 
-.login2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 15%;
-  position: relative;
-  right: 10;
-  float: right;
-  margin-left: auto;
-  gap: 30px;
-  font-size: 20px;
-}
