@@ -39,7 +39,6 @@ function PaginaInicial() {
       </div>
 
       <div className="div-terceirapag">
-        <div >
           <h3>
             Pensando em ampliar os tipos de doações, a Bem fazer tem como
             objetivo facilitar para que qualquer pessoa pratique o bem para a
@@ -76,7 +75,6 @@ function PaginaInicial() {
               </p>
             </div>
           </div>
-        </div>
       </div>
     </>
   );
