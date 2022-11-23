@@ -193,15 +193,18 @@ function CadastroUsuario() {
             {/*<TextField value={user.tipoUser} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} id="tipoUser" label="Tipo Usuário" variant="outlined" name="tipoUser" margin="normal" fullWidth />*/}
 
             <FormControl fullWidth className="btn-tipo">
+
               <Select
                 labelId="demo-simple-select-helper-label"
                 id="demo-simple-select-helper"
                 value={user.tipoUser}
                 onChange={selectTipo}
               >
+
                 <MenuItem value="ong"></MenuItem>
                 <MenuItem value="ong">ONG</MenuItem>
                 <MenuItem value="voluntario">Voluntário</MenuItem>
+
               </Select>
               <FormHelperText>Escolha um perfil de usuário</FormHelperText>
             </FormControl>
