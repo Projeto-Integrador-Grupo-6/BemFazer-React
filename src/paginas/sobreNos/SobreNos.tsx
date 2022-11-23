@@ -99,7 +99,7 @@ export default function SobreNos() {
       <CardMedia
         component="img"
         height="140"
-        image="https://imgur.com/f1Nbfp4.jpg"
+        image="https://cdn.dooca.store/477/products/a2928a.jpg?v=1614742661"
         alt="Juntos somos mais"
       />
       <CardContent>
@@ -107,10 +107,7 @@ export default function SobreNos() {
           Juntos somos mais
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-          reprehenderit excepturi ex, voluptatibus quia aspernatur. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Non id provident fugiat
-          quas quia.
+        Com o propósito de transformar a vida de quem constrói e de quem ajuda a construir sonhos, temos orgulho de dizer que estabelecemos a maior rede de relacionamento da construção civil.
         </Typography>
       </CardContent>
       <CardActions>
@@ -136,10 +133,7 @@ export default function SobreNos() {
           Um coração
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-          reprehenderit excepturi ex, voluptatibus quia aspernatur. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Non id provident fugiat
-          quas quia.
+        Ninguém deveria deixar de ter a ternura de um coração de criança, mesmo tendo somando muitos anos de vida. Crescer, em muitos casos, é encolher-se. Ser grande, é uma questão de inteligência e de sabedoria.
         </Typography>
       </CardContent>
       <CardActions>
@@ -178,7 +172,7 @@ export default function SobreNos() {
 
   return (
     <div>
-        <img src="https://imgur.com/5O0pktQ.png" alt="" className="img5" />
+        <img src="https://imgur.com/xExdVhn.png" alt="" className="img5" />
 
       <div className="faixa">
         <p className="faixa-margin"> PARCEIROS </p>
@@ -193,9 +187,9 @@ export default function SobreNos() {
             responsive={responsive}
             controlsStrategy="alternate"
             infinite
-            // autoPlay
-            // animationDuration={4000}
-            // autoPlayInterval={1000}
+            autoPlay
+            animationDuration={4500}
+            autoPlayInterval={1000}
           />
         </Box>
       </div>

@@ -1,12 +1,9 @@
 .card {
     margin: 0 auto;
-    /* margin-top: 0px !important; */
-    /* gap: 30px; */
     width: 80%;
     padding: 5px;
     padding-left: 5px;
     position: relative;
-    /* margin-bottom: 15px; */
 }
 
 .alice-carousel__wrapper {
@@ -52,11 +49,11 @@
 }
 
 .img5 {
-    background: url('https://imgur.com/yGfuK34.png');
+    margin: 0 auto;
+    padding: 0;
 }
 
 .card::before {
-    /* background-image: url('https://images.unsplash.com/photo-1624928133086-0bb838a85f44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'); */
     opacity: 0.6;
     width: 100%;
     height: 100%;
@@ -75,7 +72,7 @@
 }
 
 .faixa-margin {
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: -20px;
 }
 

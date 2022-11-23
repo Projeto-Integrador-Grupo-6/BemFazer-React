@@ -13,6 +13,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { TokenState } from "../../../store/tokens/tokensReducer";
 import { addToken } from "../../../store/tokens/actions";
 import { toast } from "react-toastify";
+import LocalMallIcon from '@mui/icons-material/LocalMall';
 
 // const settings = ['Profile', 'Account', 'Logout'];
 
@@ -187,12 +188,7 @@ function Navbar() {
 
         </Box>
 
-        <Box className="shop">
-          <img
-            src="https://imgur.com/vh4pRv2.png"
-            alt="Icone - sacola de compra"
-          />
-        </Box>
+        <LocalMallIcon className="bag-icon"/>
 
         <Box sx={{ flexGrow: 0 }} className="login">
           <Tooltip title="Open settings">
