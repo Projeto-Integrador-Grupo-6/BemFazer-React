@@ -47,3 +47,11 @@
   gap: 15px;
 }
 
+.bag-icon {
+  width: 3em !important;
+  color: #E55C51;
+}
+
+.bag-icon:hover {
+  color: #ef4236;
+}
