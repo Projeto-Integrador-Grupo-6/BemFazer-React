@@ -4,7 +4,7 @@
 }
 
 .imagem{
-    background-image: url(https://imgur.com/DdUpCQO.png);
+    background-image: url(https://imgur.com/40TSP0K.png);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
@@ -30,5 +30,16 @@
 .logo-login img{
     max-width: 250px;
     max-height: 2150px;
-    transform: translate(30%, -950%);
+    display: block;
+    margin: 0 auto 5rem;
+}
+
+.arrow {
+    margin-left: 3.8em;
+    font-size: 40px !important;
+    color: #E55C51;
+}
+
+.arrow:hover {
+    font-size: 42px !important;
 }

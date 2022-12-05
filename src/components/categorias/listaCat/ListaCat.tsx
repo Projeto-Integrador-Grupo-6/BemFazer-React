@@ -53,10 +53,10 @@ function ListaCat() {
   return (
     <>
       {categorias.length === 0 && (
-        <div id="js-preloader" className="js-preloader">
-          <div className="preloader-inner">
-            <span className="dot"></span>
-            <div className="dots">
+        <div id="js-preloader2" className="js-preloader2">
+          <div className="preloader-inner2">
+            <span className="dot2"></span>
+            <div className="dots2">
               <span></span>
               <span></span>
               <span></span>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, ChangeEvent } from "react";
 import { Grid, Typography, TextField, Button, Select } from "@material-ui/core";
 import { Link, useNavigate } from "react-router-dom";
-import { Box, FormControl, InputLabel, MenuItem } from "@mui/material";
+import { Box, FormControl, FormHelperText, InputLabel, MenuItem } from "@mui/material";
 import { cadastroUsuario } from "../../services/Service";
 import User from "../../models/User";
 import "./CadastroUsuario.css";
@@ -106,6 +106,9 @@ function CadastroUsuario() {
 
       <Grid item xs={6} alignItems="center">
         <Box paddingX={10}>
+          <div className="logo-login2">
+            <img src="https://imgur.com/8jjQm8b.png" alt="" />
+          </div>
           <form onSubmit={onSubmit}>
             <Typography
               variant="h4"
@@ -129,6 +132,7 @@ function CadastroUsuario() {
               name="nome"
               margin="normal"
               fullWidth
+              required
             />
             <TextField
               value={user.email}
@@ -141,6 +145,8 @@ function CadastroUsuario() {
               name="email"
               margin="normal"
               fullWidth
+              required
+              helperText='Insira um e-mail válido'
             />
             <TextField
               value={user.foto}
@@ -166,6 +172,8 @@ function CadastroUsuario() {
               margin="normal"
               type="password"
               fullWidth
+              required
+              helperText='Sua senha deve conter no mínimo 8 caracteres'
             />
             <TextField
               value={confirmarSenha}
@@ -179,40 +187,47 @@ function CadastroUsuario() {
               margin="normal"
               type="password"
               fullWidth
+              required
             />
 
             {/*<TextField value={user.tipoUser} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} id="tipoUser" label="Tipo Usuário" variant="outlined" name="tipoUser" margin="normal" fullWidth />*/}
 
             <FormControl fullWidth className="btn-tipo">
-              <InputLabel id="demo-simple-select-helper-label"> Escolha o tipo de usuário: </InputLabel>
+
               <Select
                 labelId="demo-simple-select-helper-label"
                 id="demo-simple-select-helper"
                 value={user.tipoUser}
                 onChange={selectTipo}
               >
+
+                <MenuItem value="ong"></MenuItem>
                 <MenuItem value="ong">ONG</MenuItem>
                 <MenuItem value="voluntario">Voluntário</MenuItem>
+
               </Select>
+              <FormHelperText>Escolha um perfil de usuário</FormHelperText>
             </FormControl>
 
             <Box marginTop={2} textAlign="center">
-
-              <Link to='/login' className="text-decorator-none">
-              <Button type="submit" variant="contained" className="btn-cancelar">
-                cancelar
-              </Button>
+              <Link to="/login" className="text-decorator-none">
+                <Button
+                  type="submit"
+                  variant="contained"
+                  className="btn-cancelar"
+                >
+                  cancelar
+                </Button>
               </Link>
-              <Button type="submit" variant="contained" className="btn-cadastrar">
+              <Button
+                type="submit"
+                variant="contained"
+                className="btn-cadastrar"
+              >
                 cadastrar
               </Button>
-              
             </Box>
           </form>
-
-          <div className="logo-login2">
-            <img src="https://imgur.com/8jjQm8b.png" alt="" />
-          </div>
         </Box>
       </Grid>
     </Grid>

@@ -99,7 +99,7 @@ export default function SobreNos() {
       <CardMedia
         component="img"
         height="140"
-        image="https://imgur.com/f1Nbfp4.jpg"
+        image="https://cdn.dooca.store/477/products/a2928a.jpg?v=1614742661"
         alt="Juntos somos mais"
       />
       <CardContent>
@@ -107,10 +107,7 @@ export default function SobreNos() {
           Juntos somos mais
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-          reprehenderit excepturi ex, voluptatibus quia aspernatur. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Non id provident fugiat
-          quas quia.
+        Com o propósito de transformar a vida de quem constrói e de quem ajuda a construir sonhos, temos orgulho de dizer que estabelecemos a maior rede de relacionamento da construção civil.
         </Typography>
       </CardContent>
       <CardActions>
@@ -136,10 +133,7 @@ export default function SobreNos() {
           Um coração
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-          reprehenderit excepturi ex, voluptatibus quia aspernatur. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Non id provident fugiat
-          quas quia.
+        Ninguém deveria deixar de ter a ternura de um coração de criança, mesmo tendo somando muitos anos de vida. Crescer, em muitos casos, é encolher-se. Ser grande, é uma questão de inteligência e de sabedoria.
         </Typography>
       </CardContent>
       <CardActions>
@@ -178,38 +172,7 @@ export default function SobreNos() {
 
   return (
     <div>
-      <div className="about">
-        <Stack direction="row" spacing={2}>
-          <img src="https://imgur.com/tYZRM4G.png" alt="" className="img" />
-          <img src="https://imgur.com/FaIf3Wl.png" alt="" className="img2" />
-
-          <div className="about-bg">
-            <h2 className="title-text">
-              nossa história
-            </h2>
-            <p className="about-text">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sete mulheres se
-              juntaram com um sonho de poder inovar e ajudar as pessoas. Com
-              isso, em 2022, vimos a necessidade de ajudar e incentivar ONG's.
-              Percebemos que umas das maiores dificuldades para acontecer esta
-              conexão é a falta de informação.Como por exemplo, localização,
-              contatos e qual a forma que as pessoas podem ajudar.
-              <br />
-              <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sabendo disso,
-              identificamos que um dos grandes obstáculos para que aconteca essa
-              comunicação entre voluntários e organizações, é a falta de
-              estrutura.
-              <br />
-              <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Então nasce a Bem
-              Fazer, dando vida estrutural para facilitar a conexão de pessoas e
-              ONG's. A ideia da Bem Fazer é fazer fluir a comunicação entre
-              voluntários e fomentar o terceiro setor.
-            </p>
-          </div>
-        </Stack>
-      </div>
+        <img src="https://imgur.com/xExdVhn.png" alt="" className="img5" />
 
       <div className="faixa">
         <p className="faixa-margin"> PARCEIROS </p>
@@ -225,7 +188,7 @@ export default function SobreNos() {
             controlsStrategy="alternate"
             infinite
             autoPlay
-            animationDuration={4000}
+            animationDuration={4500}
             autoPlayInterval={1000}
           />
         </Box>
@@ -273,7 +236,7 @@ export default function SobreNos() {
             <h4>Claudia Fanzioni</h4>
             <p className="p-depo">
               Acredito que com a Bem Fazer os processos tenham se tornado mais
-              centralizados. Era o que nossa ONG precisava e buscavámos.
+              centralizados. Era o que nossa ONG precisava e buscávamos.
             </p>
             <div className="avatar">
               <Avatar
@@ -331,33 +294,6 @@ export default function SobreNos() {
             </span>
           </a>
         </section>
-      </div>
-
-      <div>
-        <Link to="/categorias" className="text-decorator-none">
-          <button className="button-sn">
-            <span>Saiba Mais</span>
-            <svg
-              width="34"
-              height="34"
-              viewBox="0 0 74 74"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="37"
-                cy="37"
-                r="35.5"
-                stroke="white"
-                stroke-width="3"
-              ></circle>
-              <path
-                d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
-                fill="white"
-              ></path>
-            </svg>
-          </button>
-        </Link>
       </div>
     </div>
   );

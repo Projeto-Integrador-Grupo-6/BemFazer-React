@@ -134,9 +134,9 @@ function CadastroServico() {
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro serviço</Typography>
-                <TextField value={servico.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedServico(e)} id="titulo" label="titulo" variant="outlined" name="titulo" margin="normal" fullWidth />
-                <TextField value={servico.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedServico(e)} id="descricao" label="descrição" name="descricao" variant="outlined" margin="normal" fullWidth />
-                <TextField value={servico.valor} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedServico(e)} id="valor" label="valor" name="valor" variant="outlined" margin="normal" fullWidth />
+                <TextField value={servico.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedServico(e)} id="titulo" label="Título" variant="outlined" name="titulo" margin="normal" fullWidth />
+                <TextField value={servico.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedServico(e)} id="descricao" label="Descrição" name="descricao" variant="outlined" margin="normal" fullWidth />
+                <TextField value={servico.valor} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedServico(e)} id="valor" label="Valor" name="valor" variant="outlined" margin="normal" fullWidth />
 
                 <FormControl >
                     <InputLabel id="demo-simple-select-helper-label">Tipo da Ong</InputLabel>
