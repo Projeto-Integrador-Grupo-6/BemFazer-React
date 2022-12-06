@@ -22,10 +22,10 @@ function Time() {
           <p className="texto-card">
             <div >
               <a target="_blank" href="https://github.com/jihye83">
-                <GitHubIcon className="social-icon" />
+                <GitHubIcon className="social-icon"/>
               </a>
               <a target="_blank" href="https://www.linkedin.com/in/jihye-koo/">
-                <LinkedInIcon className="social-icon" />
+                <LinkedInIcon className="social-icon"/>
               </a>
             </div>
           </p>
@@ -43,13 +43,13 @@ function Time() {
           <p className="texto-card">
             <div>
               <a target="_blank" href="https://github.com/ScarletMartins">
-                <GitHubIcon className="social-icon" />
+                <GitHubIcon className="social-icon"/>
               </a>
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/scarletmartins/"
               >
-                <LinkedInIcon className="social-icon" />
+                <LinkedInIcon className="social-icon"/>
               </a>
             </div>
           </p>
@@ -67,10 +67,10 @@ function Time() {
           <p className="texto-card">
             <div>
               <a target="_blank" href="https://github.com/techchoi">
-                <GitHubIcon className="social-icon" />
+                <GitHubIcon className="social-icon"/>
               </a>
               <a target="_blank" href="https://www.linkedin.com/in/choinina/">
-                <LinkedInIcon className="social-icon" />
+                <LinkedInIcon className="social-icon"/>
               </a>
             </div>
           </p>
@@ -88,13 +88,13 @@ function Time() {
           <p className="texto-card">
             <div>
               <a target="_blank" href="https://github.com/TatianeAlvesO">
-                <GitHubIcon className="social-icon" />
+                <GitHubIcon className="social-icon"/>
               </a>
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/tatiane-alves-de-oliveira-5ab406180/"
               >
-                <LinkedInIcon className="social-icon" />
+                <LinkedInIcon className="social-icon"/>
               </a>
             </div>
           </p>
@@ -114,13 +114,13 @@ function Time() {
           <p className="texto-card">
             <div>
               <a target="_blank" href="https://github.com/victoriamelo09">
-                <GitHubIcon className="social-icon" />
+                <GitHubIcon className="social-icon"/>
               </a>
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/victória-melo-a143b9171/"
               >
-                <LinkedInIcon className="social-icon" />
+                <LinkedInIcon className="social-icon"/>
               </a>
             </div>
           </p>
@@ -138,13 +138,13 @@ function Time() {
           <p className="texto-card">
             <div>
               <a target="_blank" href="https://github.com/adigramont">
-                <GitHubIcon className="social-icon" />
+                <GitHubIcon className="social-icon"/>
               </a>
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/hellen-digramont-eilert-69a41685/"
               >
-                <LinkedInIcon className="social-icon" />
+                <LinkedInIcon className="social-icon"/>
               </a>
             </div>
           </p>
@@ -162,13 +162,13 @@ function Time() {
           <p className="texto-card">
             <div>
               <a target="_blank" href="https://github.com/belaxsantos">
-                <GitHubIcon className="social-icon" />
+                <GitHubIcon className="social-icon"/>
               </a>
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/isabela-soares-4b148822b/"
               >
-                <LinkedInIcon className="social-icon" />
+                <LinkedInIcon className="social-icon"/>
               </a>
             </div>
           </p>

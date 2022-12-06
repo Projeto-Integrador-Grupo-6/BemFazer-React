@@ -18,9 +18,107 @@
 }
 
 .img {
-  width: 500px;
-  height: 500px;
+  width: 250px;
+  height: 250px;
   display: block;
   margin: 0 auto;
 
+}
+
+#chatCon {
+    width: 15%;
+    position: absolute;
+    bottom: -28%;
+    right: 6%;
+}
+
+
+
+
+
+#chatCon .chat-box {
+  /* display: none; */
+  width: 100%;
+  height: 500px;
+  border-radius: 25px;
+  background-color: #eee;
+
+  
+}
+
+#chatCon .chat-box .header {
+  background-color: #3fda73;
+  padding: 15px;
+  border-radius: 20px 20px 0 0;
+  color: #fff;
+  font-size: 20px;
+}
+
+#chatCon .chat-box .msg-area {
+  overflow: hidden;
+  height: 370px;
+  padding: 15px;
+}
+
+#chatCon .chat-box .msg-area .left span {
+  display: inline-block;
+  font-size: 17.5px;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #ddd;
+}
+
+#chatCon .chat-box .msg-area .right {
+  text-align: right;
+}
+
+#chatCon .chat-box .msg-area .right span {
+  display: inline-block;
+  font-size: 17.5px;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #ddd;
+}
+
+#chatCon .chat-box .footer {
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#chatCon .chat-box .footer input {
+  border: 1px solid #fff;
+  padding: 10px;
+  width: 80%;
+  border-radius: 15px;
+}
+
+#chatCon .chat-box .footer input:foucs {
+  outline: none;
+}
+
+#chatCon .chat-box .footer button {
+  border: none;
+  font-size: 22.5px;
+  color: lightgreen;
+  cursor: pointer;
+}
+
+#chatCon .pop {
+  width: 100%;
+  height: 25%;
+  cursor: pointer;
+}
+
+#chatCon .pop p {
+  text-align: right;
+}
+
+#chatCon .pop img {
+  border-radius: 50%;
+  width: 25%;
 }
