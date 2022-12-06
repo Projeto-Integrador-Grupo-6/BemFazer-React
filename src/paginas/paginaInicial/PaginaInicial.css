@@ -1,169 +1,210 @@
 .div-paginicial {
-    min-width: 100vw;
-    min-height: 100vh;
-    background: url('https://imgur.com/kxdpTDp.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: left;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: url('https://imgur.com/kxdpTDp.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: left;
 }
 
 .div-segundapag {
-    min-width: 100vw;
-    min-height: 100vh;
-    background: url('https://imgur.com/G1XEQgq.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: url('https://imgur.com/G1XEQgq.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .div-segundapag p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 1.5em;
-    margin-top: 0.5em;
-    margin-bottom: 0;
-    padding-left: 5%;
-    margin-left: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  padding-left: 5%;
+  margin-left: 0;
 }
 
 .logo-ong {
-    max-width: 3em;
-    margin-left: 5em;
-    margin-top: 13em;
-    margin-bottom: 0;
+  max-width: 3em;
+  margin-left: 5em;
+  margin-top: 13em;
+  margin-bottom: 0;
 }
 
 .logo-pf {
-    max-width: 3em;
-    margin-left: 5em;
-    margin-top: 8em;
-    margin-bottom: 0;
+  max-width: 3em;
+  margin-left: 5em;
+  margin-top: 8em;
+  margin-bottom: 0;
 }
 
 .img-home {
-    width: 32rem;
-    margin-bottom: 0;
+  width: 32rem;
+  margin-bottom: 0;
 }
 
 .div-home h2 {
-    margin-left: 10rem;
-    margin-top: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 4em;
-    transform: translate(-10%, -180%);
+  margin-left: 10rem;
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4em;
+  transform: translate(-10%, -180%);
 }
 
 .div-home p {
-    transform: translate(10%, -700%);
-    font-size: 1.5em;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
+  transform: translate(10%, -700%);
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
 .texto-paginicial {
-    transform: translate(50%, -2000%);
+  transform: translate(50%, -2000%);
 }
 
 .icon-terceirapag {
-    background: url('https://imgur.com/pIUOEnE.png');
-    min-width: 100vh;
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: url('https://imgur.com/pIUOEnE.png');
+  min-width: 100vh;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .icon-terceirapag img {
-    max-width: 6em;
-    display: flex;
-    margin-bottom: 5em;
-    margin-left: 70em;
-    padding-top: 5em;
+  max-width: 6em;
+  display: flex;
+  margin-bottom: 5em;
+  margin-left: 70em;
+  padding-top: 5em;
 }
 
 
-.p-icone{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    display: flex;
-    gap: 4rem;
-    width: 70vw;
-    margin: 0 auto;
-    margin-bottom: 0;
+.p-icone {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  display: flex;
+  width: 65vw;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 4rem;
+
 }
 
 .p-icone img {
-    width: 4em;
-    transform: translateX(180%);
+  width: 6em;
 }
 
-.p-texto{
-    margin-bottom: 0;
-    padding-left: 2em;
-    transform: translateX(-500%);
-    padding-top: 5em;
+.p-texto {
+  margin-bottom: 0;
+  padding-left: 2em;
+  transform: translateX(-500%);
+  padding-top: 5em;
 }
 
 .div-terceirapag {
-    background: url('https://imgur.com/pNPSQqT.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    min-width: 100vh;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    justify-content: center;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  min-width: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
 }
 
 .div-terceirapag h3 {
-    font-weight: 700;
-    padding: 2em 10em 0 10em;
-    font-size: 1.5em;
+  font-weight: 700;
+  padding: 2em 10em 0 10em;
+  font-size: 1.5em;
 }
 
 .dinheiro {
-    width: 33%;
+  width: 33%;
+  height: auto;
+  padding: 25px;
+  box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.564);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.dinheiro:hover {
+  transition: all 0.8s;
+  box-shadow: 2px 20px 20px rgba(0, 0, 0, 0.8);
+  transform: translate(0, -20px);
 }
 
 
 .tempo {
-    width: 33%;
+  width: 33%;
+  height: auto;
+  padding: 25px;
+  box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.564);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.tempo:hover {
+  transition: all 0.8s;
+  box-shadow: 2px 20px 20px rgba(0, 0, 0, 0.8);
+  transform: translate(0, -20px);
+
 }
 
 .material {
-    width: 33%;
+  width: 33%;
+  height: auto;
+  padding: 25px;
+  box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.564);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.material:hover {
+  transition: all 0.8s;
+  box-shadow: 2px 20px 20px rgba(0, 0, 0, 0.8);
+  transform: translate(0, -20px);
 }
 
 /* CSS BOTAO */
 
 button {
-    padding: 1.3em 3em;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-    color: #000;
-    background-color: #fff;
-    border: none;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-    margin-left: 300px;
-    position: relative;
-  }
-  
-  button:hover {
-    background-color: #e55b51;
-    box-shadow: 0px 15px 20px #976a67;
-    color: #fff;
-    transform: translateY(-7px);
-  }
-  
-  button:active {
-    transform: translateY(-1px);
-  }
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-left: 300px;
+  position: relative;
+}
+
+button:hover {
+  background-color: #e55b51;
+  box-shadow: 0px 15px 20px #976a67;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
