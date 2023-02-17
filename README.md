@@ -1,9 +1,9 @@
 # Projeto dedicado a conclusão do curso Bootcamp Generation.
-## Ongs não tem estrutara para colocar as suas informações na internete. E pessoas que queiram ajudar ou ser voluntárias, não tem acesso a estas informações.
+## Ongs não tem estrutura para colocar as suas informações na internet. E pessoas que queiram ajudar ou ser voluntárias, não tem acesso a estas informações.
 
 Depois de uma pesquisa, identificamos as dificuldades das ongs em serem encontradas por voluntários. Devido a falta de informações acessíveis na internet como um site ou um aplicativo.
 
-Reconhecendo essa dor de ongs e instituições de bairros, criamos a plataforma :
+Reconhecendo essa dor de ongs e instituições de bairros, criamos a plataforma:
 
 == BEM FAZER ==
 
